@@ -1,0 +1,125 @@
+key: design
+title: Design
+file: data/design.yaml
+fields:
+- key: colors
+  title: Couleurs
+  type: nest
+  groupdata: true
+  fields:
+  - key: bg_section
+    title: Background
+    type: section
+    groupdata: false
+    fields:
+    - key: bg
+      title: Base
+      type: color
+      autosave: true
+      tip: "Default: #fff"
+    - key: bgBold
+      title: Bold
+      type: color
+      autosave: true
+      tip: "Default: #f7f7f7"
+    - key: bgAccent
+      title: Accents
+      type: color
+      autosave: true
+      tip: "Default: #37c0fb"
+    - key: bgObscure
+      title: Obscure
+      type: color
+      autosave: true
+      tip: "Default: #333"
+    - key: bgObscureLight
+      title: Obscure - light variant
+      type: color
+      autosave: true
+      tip: "Default: #555"
+    - key: bgObscureBold
+      title: Obscure - bold variant
+      type: color
+      autosave: true
+      tip: "Default: #1f1f1f"
+  - key: fg_section
+    title: Foreground
+    type: section
+    groupdata: false
+    fields:
+    - key: fg
+      title: Base
+      type: color
+      autosave: true
+      tip: "Default: #474747"
+    - key: fgBold
+      title: Bold
+      type: color
+      autosave: true
+      tip: "Default: #4c4c4c"
+    - key: fgLight
+      title: Light
+      type: color
+      autosave: true
+      tip: "Default: #999"
+    - key: fgAccent
+      title: Accents
+      type: color
+      autosave: true
+      tip: "Default: #fff"
+    - key: fgObscure
+      title: Obscure
+      type: color
+      autosave: true
+      tip: "Default: #c0c0c0"
+  - key: borderColor
+    title: Bordures
+    type: color
+    autosave: true
+    tip: "Default: #e0e0e0"
+
+- key: fonts
+  title: Polices
+  type: accordion
+  groupdata: true
+  dynFormSearchKey: font_type
+  fields:
+  - key: font_type
+    title: Headings
+    type: select
+    multiple: false
+    options:
+    - text: Valeur surprise
+      value: font-string
+    - text: Local Font
+      value: font-local
+    - text: Font from Google API
+      value: font-google-api
+
+- key: globalheader
+  title: Global Header
+  type: nest
+  fields:
+  - key: title
+    title: Display text
+    type: markdown
+  - key: image
+    title: Header Image
+    type: section
+    groupdata: true
+    fields:
+    - key: display
+      title: Display
+      type: boolean
+    - key: src
+      title: Choose an image
+      type: select-from-query
+      query_string: "#file_base_name[]"
+      query_glob: static/images/*
+      option_image_path: /static/images
+      option_image_width: 100
+      option_image_extension: jpg
+      tip: "Store your images in [main/]static/images"
+    - key: image_alt
+      title: Image alt text
+      type: string

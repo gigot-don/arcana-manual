@@ -1,0 +1,9 @@
+map:
+  - sidebar_selector: type
+    left_sidebar: sidebar2
+    right_sidebar: base_sidebar
+    selector_value: post
+  - sidebar_selector: kind
+    left_sidebar: sidebar1
+    right_sidebar: sidebar2
+    selector_value: section

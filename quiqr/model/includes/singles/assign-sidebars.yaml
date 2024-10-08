@@ -1,0 +1,42 @@
+key: assign-sidebars
+title: Assign Sidebars
+file: data/sidebar_map.yaml
+fields:
+- key: dummy-info
+  type: info
+  content: "Allows to customize the layout of content on a type-by-type basis
+  by including between 0 and 2 sidebars. \n\n
+  Edit the content and ordering of any one sidebar *via* the \"Edit Sidebars\" entry on the left."
+- key: map
+  title: Choice of Sidebars
+  type: accordion
+  dynFormSearchKey: sidebar_selector
+  groupdata: false
+  fields:
+  - key: selector-info
+    type: info
+    size: large
+    content: >-
+      If any given page has a configuration provided both for its `type` and `kind`,
+      the `type` supplied layout overrides the `kind` one.
+  - key: sidebar_selector
+    title: Apply layout to
+    type: select
+    multiple: false
+    options:
+    - value: kind
+      text: All pages of a given Kind
+    - value: type
+      text: All pages of a given Type
+  - key: left_sidebar
+    title: Left Sidebar
+    type: select-from-query
+    query_glob: data/sidebars/*.yaml
+    query_string: "#file_base_name[]"
+    tip: Click the little \"X\" on the right of the dialog to set no sidebar
+  - key: right_sidebar
+    title: Right Sidebar
+    type: select-from-query
+    query_glob: data/sidebars/*.yaml
+    query_string: "#file_base_name[]"
+    tip: Click the little \"X\" on the right of the dialog to set no sidebar

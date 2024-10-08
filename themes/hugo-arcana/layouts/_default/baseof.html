@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="{{ .Language }}">
+    <head>
+        {{- partial "head/head.html" . -}}
+        {{- template "_internal/opengraph.html" . -}}
+    </head>
+    <body class="is-preload">
+        {{- partial "analytics/google-tag-manager/body.html" . }}
+        <div id="page-wrapper">
+            {{- partial "header.html" . }}
+
+            {{ $sidebarConfigFound := dict }}
+            {{ $numSidebars := 0 }}
+            {{ $page := . }}
+
+            {{ with where $.Site.Data.sidebar_map.map "sidebar_selector" "type" }}
+                {{ with where . "selector_value" $.Type }}
+                    {{ $sidebarConfigFound = (index . 0) }}
+                    {{ with $sidebarConfigFound.left_sidebar }} {{ $numSidebars = add $numSidebars 1 }} {{ end }}
+                    {{ with $sidebarConfigFound.right_sidebar }} {{ $numSidebars = add $numSidebars 1 }} {{ end }}
+                {{ end }}
+            {{ end }}
+            {{ if not $sidebarConfigFound }}
+                {{ with where .Site.Data.sidebar_map.map "sidebar_selector" "kind" }}
+                    {{ with where . "selector_value" $.Kind }}
+                        {{ $sidebarConfigFound = (index . 0) }}
+                        {{ with $sidebarConfigFound.left_sidebar }} {{ $numSidebars = add $numSidebars 1 }} {{ end }}
+                        {{ with $sidebarConfigFound.right_sidebar }} {{ $numSidebars = add $numSidebars 1 }} {{ end }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+
+
+            {{- $sidebar_count := (add (cond (isset .Params "sidebar_left") 1 0) (cond (isset .Params "sidebar_right") 1 0)) }}
+
+            <section class="wrapper style1">
+                <div class="container">
+                    {{ if gt $numSidebars 0 }}<div class="row gtr-200">{{ end }}
+
+                        {{ if $sidebarConfigFound }}
+                            {{- with (index $page.Site.Data.sidebars $sidebarConfigFound.left_sidebar) }}
+                                <div class="col-{{ cond (eq $numSidebars 1) 4 3 }} col-12-narrower">
+                                    <div id="sidebar">
+                                        {{ range .items }}
+                                            {{ partial (printf "sidebar/blocks/%s.html" .sidebar_component_type) (dict "page" $page "item" .) }}
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            {{- end }}
+                        {{ end }}
+
+                        <div class="{{ if gt $numSidebars 0 -}}
+                                col-{{ cond (eq $numSidebars 1) 8 6 }} col-12-narrower imp-narrower
+                                {{- end }}">
+                            <div id="content">
+                                <article>
+                                    {{- block "main" . }}{{- end }}
+                                </article>
+                            </div>
+                        </div>
+
+                        {{ if $sidebarConfigFound }}
+                            {{- with (index $page.Site.Data.sidebars $sidebarConfigFound.right_sidebar) }}
+                                <div class="col-{{ cond (eq $numSidebars 1) 4 3 }} col-12-narrower">
+                                    <div id="sidebar">
+                                        {{ range .items }}
+                                            {{ partial (printf "sidebar/blocks/%s.html" .sidebar_component_type) (dict "page" $page "item" .) }}
+                                        {{ end }}
+                                        {{ if .button_enabled }}
+                                            <footer>
+                                                <a href="{{ .button.url }}" class="button">{{ .button.text }}</a>
+                                            </footer>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            {{- end }}
+                        {{ end }}
+
+                    {{ if gt $numSidebars 0 }}</div>{{ end }}
+                </div>
+            </section>
+
+            {{- partial "footer/footer.html" . -}}
+        </div>
+        {{- partial "scripts.html" . -}}
+    </body>
+</html>

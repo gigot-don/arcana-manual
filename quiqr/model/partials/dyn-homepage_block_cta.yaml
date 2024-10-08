@@ -1,0 +1,18 @@
+title: Call to Action
+  key: component-cta
+  groupdata: false
+  type: nest
+  fields:
+  - key: contents
+    title: Contents
+    type: markdown
+  - key: button
+    title: Button
+    type: nest
+    fields:
+    - key: contents
+      title: Contents
+      type: string
+    - key: url
+      title: URL
+      type: string

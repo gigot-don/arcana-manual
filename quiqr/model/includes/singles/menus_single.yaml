@@ -1,0 +1,40 @@
+key: menus_custom
+title: Menus
+file: data/menus_custom.yaml
+fields:
+- key: main
+  title: Main Menu
+  type: accordion
+  groupdata: true
+  fields:
+  - key: text
+    title: Text
+    type: string
+    arrayTitle: true
+  - key: url
+    title: URL
+    type: string
+  - key: children
+    title: Submenus
+    type: accordion
+    groupdata: true
+    fields:
+    - key: text
+      title: Text
+      type: string
+      arrayTitle: true
+    - key: url
+      title: URL
+      type: string
+    - key: children
+      title: Subsubmenus
+      type: accordion
+      groupdata: true
+      fields:
+      - key: text
+        title: Text
+        type: string
+        arrayTitle: true
+      - key: url
+        title: URL
+        type: string

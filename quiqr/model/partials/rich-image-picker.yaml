@@ -1,0 +1,37 @@
+key: rich-image-picker
+title: Rich Image Picker
+fields:
+- key: bundleManager
+  title: Image Picker
+  type: bundle-manager
+  path: images/
+  maxItems: 1
+  fields:
+  - key: imageThumbnail
+    type: bundle-image-thumbnail
+- key: title
+  arrayTitle: true
+  title: Title
+  type: string
+- key: alt
+  title: Alt Text - To be broadcast when the image cannot (e.g. for accessibility devices)
+  type: string
+- key: enabled
+  title: Display image
+  type: boolean
+  default: true
+- key: processingHint
+  title: Image type
+  type: select
+  default: photo
+  options:
+  - value: drawing
+    text: "Drawing - hand or line drawing with high-contrast detail"
+  - value: icon
+    text: "Icon - small colorful image"
+  - value: photo
+    text: "Photo - Outdoor photograph with natural lighting"
+  - value: picture
+    text: "Picture - Indoor photograph such as a portrait"
+  - value: text
+    text: "Text - Image that is primarily text"

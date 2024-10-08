@@ -1,0 +1,18 @@
+- key: collections
+  title: Collections
+  menuItems:
+    - key: posts
+
+- key: sidebars
+  title: Sidebars
+  menuItems:
+    - key: edit-sidebars
+    - key: assign-sidebars
+
+- key: site-configuration
+  title: Configuration site
+  menuItems:
+    - key: siteconfig
+    - key: homepage_custom
+    - key: design
+    - key: menus_custom

@@ -1,0 +1,11 @@
+title: Heading
+  key: component-heading
+  groupdata: false
+  type: nest
+  fields:
+  - key: heading
+    title: Title
+    type: string
+  - key: contents
+    title: Subtitle
+    type: string

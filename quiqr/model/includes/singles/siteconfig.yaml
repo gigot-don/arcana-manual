@@ -1,0 +1,249 @@
+key: siteconfig
+title: Site Configuration
+file: config/_default/config.yaml
+fields:
+- key: title
+  title: Site Title
+  type: string
+- key: baseURL
+  title: Base URL
+  type: string
+- key: theme
+  title: Theme
+  type: select-from-query
+  query_glob: themes/**/theme.*
+  query_string: "#parent_dir[]"
+- key: empty-zmqsdu
+  type: empty-line
+- key: copyright
+  title: Copyright
+  type: string
+- key: languageCode
+  title: Language Code
+  type: string
+- key: defaultContentLanguage
+  title: Default Content Language
+  type: string
+- key: timeZone
+  title: Timezone
+  type: string
+- key: empty-douiz
+  type: empty-line
+- key: markup
+  title: Markup Configuration
+  type: nest
+  groupdata: true
+  fields:
+  - key: tableOfContents
+    title: Table Of Contents
+    type: section
+    fields:
+    - key: ordered
+      title: Ordered
+      type: boolean
+      default: false
+    - key: startLevel
+      title: Start Level
+      type: slider
+      step: 1
+      min: 1
+      max: 6
+      default: 2
+    - key: endLevel
+      title: End Level
+      type: slider
+      step: 1
+      min: 1
+      max: 6
+      default: 3
+- key: imgProcConfig
+  title: Image Processing Configuration
+  type: nest
+  groupdata: true
+  fields:
+  - key: pixelDensities
+    title: Target Additional Pixel Densities
+    type: select
+    multiple: true
+    options:
+    - "2x"
+    - "3x"
+    tip: Offer alternate higher resolution images as option for Retina/HD Displays, slightly increases site build time and storage size
+  - key: convertToWebp
+    title: Serve WebP if possible
+    type: boolean
+    default: true
+    tip: Offers better performance (page load speed and such) - Original image format is served as fallback for compatibility reasons
+  - key: quality
+    title: Compression Quality Level
+    type: slider
+    step: 1
+    min: 0
+    max: 100
+    default: 75
+    tip: "Used for internal compression config, higher values result in larger file sizes (default: 75)"
+- key: related
+  title: "\"Related Content\" Configuration"
+  type: nest
+  groupdata: true
+  fields:
+  - key: related-info
+    title: See docs
+    type: info
+    content: "## See [this page](https://gohugo.io/content-management/related/#configure-related-content) from the Hugo docs for more details."
+  - key: includeNewer
+    title: Include Newer entries
+    type: boolean
+    default: false
+    tip: "If enabled, more recent content can be found as related. Has the potential downside that \"related\" lists for a given content item may change over time as new content is added to the site."
+  - key: threshold
+    title: Relatedness threshold
+    type: slider
+    step: 1
+    min: 0
+    max: 100
+    default: 80
+    tip: "Lower values yield more, but maybe not so relevant, matches. Default: 80"
+  - key: toLower
+    title: Lower case keywords before matching
+    type: boolean
+    default: false
+    tip: May give more accurate results at a slight performance penalty. Overridden by specific index configuration.
+  - key: empty-vpqkmc
+    type: empty-line
+  - key: indices
+    title: Indices
+    type: accordion
+    groupdata: true
+    fields:
+    - key: type
+      title: Type of index
+      type: select
+      default: basic
+      options:
+      - basic
+      - fragments
+    - key: name
+      title: Name
+      type: string
+      tip: Matches the frontmatter entry that is used to relate content items
+    - key: weight
+      title: Weight
+      type: slider
+      default: 25
+      step: 1
+      min: -100
+      max: 100
+      tip: Indicates how important a single parameter is, relative to the others. Value of 0 effectively turns an index off.
+    - key: empty-qsdozienc
+      type: empty-line
+    - key: extraOptions
+      title: Extra Options
+      type: section
+      groupdata: false
+      fields:
+      - key: cardinalityThreshold
+        title: Cardinality Threshold
+        type: slider
+        step: 1
+        min: 0
+        max: 100
+        default: 0
+        tip: "If between 1 and 100, discards all keywords used in more than that percent of content from match search. A value of 0 means no keyword is discarded in this way. Default: 0"
+      - key: applyFilter
+        title: (Fragments only) Filter matches
+        type: boolean
+        default: false
+        tip: "Only used for \"fragments\" indices"
+      - key: pattern
+        title: (Date only) Matching timespan
+        type: select
+        tip: Restricting to month may be a better option for busier sites
+        default : "2006"
+        options:
+        - key: "2006"
+          text: Y - Match with all content published the same year
+        - key: "200601"
+          text: M - Match (only) with content published the same month
+- key: empty-qsduyaze
+  type: empty-line
+- key: params
+  type: pull
+  fields:
+  - key: description
+    title: Meta Description (for indexing / SEO)
+    type: string
+  - key: keywords
+    title: Meta Keywords (for indexing / SEO)
+    type: chips
+  - key: section
+    title: Show
+    type: section
+    groupdata: false
+    fields:
+    - key: show_post_dates
+      title: Post Dates
+      type: boolean
+    - key: show_lastmod
+      title: Last Modification Time
+      type: boolean
+    - key: show_table_of_contents
+      title: Table of Contents
+      type: boolean
+  - key: empty-qsdazvw
+    type: empty-line
+  - key: social
+    title: Social Links
+    type: accordion
+    fields:
+    - key: title
+      title: Title
+      type: string
+      arrayTitle: true
+    - key: icon
+      title: Icon
+      type: string
+    - key: url
+      title: URL
+      type: string
+  - key: empty-qsdaziu
+    type: empty-line
+  - key: footer
+    title: Footer
+    type: section
+    fields:
+    - key: links
+      title: Links section
+      type: accordion
+      fields:
+      - key: linksInfo
+        type: info
+        theme: warn
+        content: "Arcana Theme only supports up to 6 link sections"
+      - key: header
+        title: Section Header
+        type: string
+      - key: links
+        title: Links
+        type: accordion
+        fields:
+        - key: title
+          title: Title
+          type: string
+        - key: url
+          title: URL
+          type: string
+    - key: contact_form
+      title: Contact Form
+      type: section
+      groupdata: true
+      fields:
+      - key: enabled
+        title: Enabled
+        type: boolean
+      - key: header
+        title: Header
+        type: string
+      - key: action
+        title: POST action
+        type: string

@@ -1,0 +1,10 @@
+fields:
+  - key: enabled
+    title: Enabled
+    type: boolean
+    default: false
+  - key: data
+    title: Sidebar
+    type: select-from-query
+    query_glob: data/sidebars/*.yaml
+    query_string: "#file_base_name[]"

@@ -1,0 +1,9 @@
+main:
+  - text: Bla
+    url: zou
+    children:
+      - text: Héhou
+        url: ha
+        children:
+          - text: Zabouzou
+            url: he

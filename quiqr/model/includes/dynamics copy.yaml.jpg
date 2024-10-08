@@ -1,0 +1,10 @@
+- homepage_component_type: highlights
+  _mergePartial: dyn-homepage_block_highlights.yaml
+- homepage_component_type: heading
+  _mergePartial: dyn-homepage_block_heading.yaml
+- homepage_component_type: posts
+  _mergePartial: dyn-homepage_block_list_of_content.yaml
+- homepage_component_type: cta
+  _mergePartial: dyn-homepage_block_cta.yaml
+
+  

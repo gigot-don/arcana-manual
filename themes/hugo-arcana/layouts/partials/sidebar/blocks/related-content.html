@@ -1,0 +1,15 @@
+<section>
+    {{ with .item.heading }}
+    <h3> {{ . }}</h3>
+    {{ end }}
+
+    {{ $pages := .page.Site.RegularPages.Related .page }}
+
+    {{ with .page.Site.RegularPages.Related .page | first (.item.number_of_entries | default 4) }}
+        <ul class="links">
+            {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+            {{ end }}
+        </ul>
+    {{ end }}
+</section>

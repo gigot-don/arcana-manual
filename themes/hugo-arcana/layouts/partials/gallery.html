@@ -1,0 +1,23 @@
+<section class="wrapper style1">
+    <div class="container">
+        {{ $num_entries_per_row := 3 }}
+        {{ $width_in_col_of_entry := div 12 $num_entries_per_row}}
+        <h3>Image Gallery</h3>
+        {{ $gallery := . }}
+        <div class="row">
+        {{- range $idx, $itm := . }}
+            {{- $rowpos := mod $idx $num_entries_per_row }}
+            {{- if eq $rowpos 0 }}
+            {{ end }}
+
+            <section class="col-{{ $width_in_col_of_entry}} col-12-narrower">
+                    <a href="{{ .RelPermalink }}" class="image fit aln-middle"><img src="{{ .RelPermalink }}" /></a>
+            </section>
+
+            {{ if or (eq $rowpos (sub $num_entries_per_row 0)) (eq $idx (len $gallery)) -}}
+            {{- end }}
+        {{- end }}
+        
+        </div>
+    </div>
+</section>

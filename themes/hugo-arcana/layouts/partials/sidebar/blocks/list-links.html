@@ -1,0 +1,19 @@
+<section>
+    {{ with .item.heading }}
+    <h3> {{ . }}</h3>
+    {{ end }}
+
+
+    {{ with .item.links }}
+        <ul class="links">
+            {{ range . }}
+            <li><a href="{{ .url }}">{{ .text }}</a></li>
+            {{ end }}
+        </ul>
+    {{ end }}
+    {{ if .item.button_enabled }}
+        <footer>
+            <a href="{{ .item.button.url }}" class="button">{{ .item.button.text }}</a>
+        </footer>
+    {{ end }}
+</section>

@@ -1,0 +1,94 @@
+baseURL: https://example.org/
+languageCode: fr-FR
+title: Portes et Plumes?
+theme: hugo-arcana
+copyright: © Untitled. All rights reserved
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+  de:
+    languageName: Deutsch
+    weight: 2
+  es:
+    languageName: Spanish
+    weight: 3
+  fr:
+    languageName: Français
+    weight: 4
+taxonomies:
+  tag: tags
+params:
+  description: A business/corporate style responsive site template.
+  images:
+    - images/metaimage.jpg
+  show_post_dates: true
+  social:
+    - title: Twitter
+      icon: fa-twitter
+      url: '#'
+    - title: Facebook
+      icon: fa-facebook-f
+      url: '#'
+    - title: GitHub
+      icon: fa-github
+      url: '#'
+    - title: LinkedIn
+      icon: fa-linkedin-in
+      url: '#'
+    - title: Creative Commons
+      icon: fa-creative-commons
+      url: https://creativecommons.org/
+  footer:
+    links:
+      - header: Links to Stuff
+        links:
+          - title: Mattis et quis rutrum
+            url: '#'
+          - title: Suspendisse amet varius
+            url: '#'
+          - title: Sed et dapibus quis
+            url: '#'
+          - title: Rutrum accumsan dolor
+            url: '#'
+          - title: Mattis rutrum accumsan
+            url: '#'
+          - title: Suspendisse varius nibh
+            url: '#'
+          - title: Sed et dapibus mattis
+            url: '#'
+      - header: More Links to Stuff
+        links:
+          - title: Duis neque nisi dapibus
+            url: '#'
+          - title: Sed et dapibus quis
+            url: '#'
+          - title: Rutrum accumsan sed
+            url: '#'
+          - title: Mattis et sed accumsan
+            url: '#'
+          - title: Duis neque nisi sed
+            url: '#'
+          - title: Sed et dapibus quis
+            url: '#'
+          - title: Rutrum amet varius
+            url: '#'
+    contact_form:
+      enabled: true
+      header: Get In Touch
+      action: ''
+  show_table_of_contents: false
+  keywords: []
+  show_lastmod: false
+markup:
+  tableOfContents:
+    ordered: false
+timeZone: Europe/Paris
+imgProcConfig:
+  pixelDensities: []
+  convertToWebp: true
+related:
+  includeNewer: false
+  toLower: false
+  indices: []

@@ -1,0 +1,105 @@
+key: posts
+title: Posts
+description: For all things posts
+extension: md
+dataformat: yaml
+itemtitle: Post
+hideIndex: true
+folder: content/posts
+fields:
+- key: title
+  title: Title
+  type: string
+- key: type
+  type: readonly
+  default: post
+- key: author
+  title: Author
+  type: string
+- key: dummy-classifications
+  title: Content Organization
+  type: nest
+  groupdata: false
+  fields:
+  - key: project
+    title: Project
+    type: string
+  - key: series
+    title: Series
+    type: string
+  - key: tags
+    title: Tags
+    type: chips
+- key: dummy-meta
+  title: Meta (for indexing / SEO)
+  type: nest
+  groupdata: false
+  fields:
+  - key: description
+    title: Description
+    type: string
+    multiLine: true
+  - key: keywords
+    title: Keywords
+    type: chips
+- key: draft
+  title: Draft
+  type: boolean
+  default: false
+- key: mainContent
+  title: Content
+  type: markdown
+- key: publishdate
+  title: Publish Date
+  type: date
+  default: now
+- key: assetInfos
+  type: info
+  content: "
+  ## Adding Assets to the Content Page:
+
+  * Any asset is published only if (at least) one \"Include...\" flag is set;\n
+  * Only one asset should be marked as ***Cover Image*** -and it should be an image; \n
+  * The Asset Manager only marks files for deletion, and cannot \"physically\" delete them from the filesystem -you must do so manually." 
+- key: image
+  title: Cover Image
+  type: image-select
+  path: page-resources/
+- key: assetManager
+  title: Asset Manager
+  type: bundle-manager
+  path: page-resources/
+  addButtonLocationTop: true
+  fields:
+  - key: thumbnail
+    type: bundle-image-thumbnail
+  - key: title
+    title: Title
+    type: string
+  - key: related
+    title: Include in Related Files
+    type: boolean
+  - key: gallery
+    title: Include in Image Gallery
+    type: boolean
+  - key: alt
+    title: Alt text (for Images)
+    type: string
+    default: false
+  - key: processingHint
+    title: Image type
+    type: select
+    default: ''
+    options:
+    - value: ''
+      text: "None - Not applicable (not an image) or undecided"
+    - value: drawing
+      text: "Drawing - hand or line drawing with high-contrast detail"
+    - value: icon
+      text: "Icon - small colorful image"
+    - value: photo
+      text: "Photo - Outdoor photograph with natural lighting"
+    - value: picture
+      text: "Picture - Indoor photograph such as a portrait"
+    - value: text
+      text: "Text - Image that is primarily text"

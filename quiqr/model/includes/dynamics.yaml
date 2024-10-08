@@ -1,0 +1,287 @@
+- homepage_component_type: highlights
+  title: Highlights
+  key: component-highlights
+  fields:
+  - key: items_per_row
+    title: Number of items per row
+    min: 1
+    max: 12
+    step: 1
+    default: 3
+    type: slider
+  - key: items
+    title: Items
+    type: accordion
+    fields:
+    - key: title
+      title: Title
+      type: string
+    - key: icon
+      title: Icon
+      type: fonticon-picker
+    - key: content
+      title: Content
+      type: easymde
+- homepage_component_type: heading
+  title: Heading
+  key: component-heading
+  fields:
+  - key: heading
+    title: Title
+    type: string
+  - key: contents
+    title: Subtitle
+    type: string
+- homepage_component_type: posts
+  title: List of Content
+  key: component-posts
+  fields:
+  - key: heading
+    title: Heading
+    type: string
+  - key: content_type
+    title: Type of Content
+    type: string
+  - key: max
+    title: Number of items
+    type: slider
+    min: 2
+    max: 10
+    step: 1
+    default: 4
+- homepage_component_type: cta
+  title: Call to Action
+  key: component-cta
+  fields:
+  - key: contents
+    title: Contents
+    type: markdown
+  - key: button
+    title: Button
+    type: nest
+    fields:
+    - key: contents
+      title: Contents
+      type: string
+    - key: url
+      title: URL
+      type: string
+
+
+- font_type: font-local
+  fields:
+  - key: inner-local
+    type: bundle-manager
+    path: static/fonts/
+    extensions:
+    - woff
+    - woff2
+    - otf
+    - ttf
+- font_type: font-google-api
+  fields:
+  - key: font-family
+    title: Font
+    type: font-picker
+    autoSave: true
+    limit: 250
+    categories:
+    - sans-serif
+    - serif
+    - display
+    - handwriting
+    - monospace
+- font_type: font-string
+  fields:
+  - key: inner_string
+    title: Ma Chaine
+    type: string
+
+
+- sidebar_selector: kind
+  fields:
+  - key: selector_value
+    title: Kind
+    type: string
+    arrayTitle: true
+- sidebar_selector: type
+  fields:
+  - key: selector_value
+    title: Type
+    type: string
+    arrayTitle: true
+
+- sidebar_component_type: related-content
+  title: Related Content
+  fields:
+  - key: heading
+    title: Heading
+    type: string
+    arrayTitle: true
+    tip: "e.g. \"See Also...\""
+  - key: number_of_entries
+    title: Number of Entries
+    type: slider
+    step: 1
+    min: 1
+    max: 10
+    default: 4
+- sidebar_component_type: related-content-with-options
+  title: Related Content
+  fields:
+  - key: heading
+    title: Heading
+    type: string
+    arrayTitle: true
+    tip: "e.g. \"See Also...\""
+  - key: number_of_entries
+    title: Number of Entries
+    type: slider
+    step: 1
+    min: 1
+    max: 10
+    default: 4
+  - key: use_custom_options
+    title: Use Custom Options
+    type: boolean
+    default: false
+    tip: If kept false, use site configuration for defining related content
+  - key: options
+    title: Custom Options
+    type: nest
+    fields:
+    - key: indices
+      title: Indices used in matching
+      type: accordion
+      fields:
+      - key: keys
+        title: Keys (front matter fields)
+        type: chips
+        arrayTitle: true
+      - key: restrictVals
+        title: Restrict Match Searching to Select Values
+        type: boolean
+        default: false
+      - key: vals
+        title: Values 
+        type: chips
+        tip: Only in effect if the previous option is checked
+    - key: fragments
+      title: Fragment Identifiers
+      type: chips
+- sidebar_component_type: list-of-content
+  title: List of Content
+  fields:
+  - key: heading
+    title: Heading
+    type: string
+    arrayTitle: true
+    tip: "e.g. \"Last Posts\""
+  - key: type
+    title: Type of Content
+    type: string
+    default: post
+    tip: Matched with the \"type\" field from content front matter
+  - key: orderBy
+    title: Order Entries by
+    type: select
+    default: Date
+    options:
+    - Date
+    - Weight
+  - key: number_of_entries
+    title: Number of Entries
+    type: slider
+    step: 1
+    min: 1
+    max: 10
+    default: 4
+  - key: empty-dsqmpnfv
+    type: empty-line
+  - key: button_enabled
+    title: Display Button below
+    type: boolean
+  - key: button
+    title: Button Config
+    type: nest
+    fields:
+    - key: text
+      title: Text
+      type: string
+    - key: url
+      title: URL
+      type: string
+- sidebar_component_type: list-links
+  title: List of Links
+  fields:
+  - key: heading
+    title: Heading
+    type: string
+    arrayTitle: true
+  - key: links
+    title: Links
+    type: accordion
+    fields:
+    - key: dummy-info
+      type: info
+      content: >-
+        - Links starting with `/` are taken as absolute *relative to the base site domain*.
+
+        - External links (e.g. `https://example.org`) are forwarded *as is*.
+
+        - Other links are always treated as relative to *any of* whichever page the sidebar appears on, making their endpoint dependent of said page.
+    - key: text
+      title: Text
+      type: string
+      arrayTitle: true
+    - key: url
+      title: URL
+      type: string
+      default: "#"
+  - key: empty-vpoqsidkw
+    type: empty-line
+  - key: button_enabled
+    title: Display Button below
+    type: boolean
+  - key: button
+    title: Button Config
+    type: nest
+    fields:
+    - key: text
+      title: Text
+      type: string
+    - key: url
+      title: URL
+      type: string
+- sidebar_component_type: table-of-contents
+  fields:
+  - key: heading
+    type: string
+    default: Table of Contents
+    arrayTitle: true
+- sidebar_component_type: markdown-section
+  title: Markdown Section
+  fields:
+  - key: heading
+    title: Heading
+    type: string
+    arrayTitle: true
+  - key: markdown
+    title: Content
+    type: markdown
+  - key: empty-dpoqmcxwk
+    type: empty-line
+  - key: button_enabled
+    title: Display Button below
+    type: boolean
+  - key: button
+    title: Button Config
+    type: nest
+    fields:
+    - key: text
+      title: Text
+      type: string
+    - key: url
+      title: URL
+      type: string
+  

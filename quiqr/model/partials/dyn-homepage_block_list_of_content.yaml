@@ -1,0 +1,18 @@
+title: List of Content
+  key: component-posts
+  groupdata: false
+  type: nest
+  fields:
+  - key: heading
+    title: Heading
+    type: string
+  - key: content_type
+    title: Type of Content
+    type: string
+  - key: max
+    title: Number of items
+    type: slider
+    min: 2
+    max: 10
+    step: 1
+    default: 4

@@ -1,0 +1,41 @@
+{{ define "main" }}
+    <header>
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Description }}</p>
+        {{ if .Site.Params.show_post_dates | default true }}
+            {{- with .Params.publishDate }}
+
+                {{/* Need to preprocess .publishDate to add possibly missing leading 0: e.g. make "2023-10-1" into "2023-10-01" */}}
+                {{ $dateParts := strings.Split . "-" }}
+                {{ $cleanDate := newScratch }}
+                {{ $cleanDate.Set "out" "" }}
+                {{ range $idx, $item := $dateParts }}
+                    {{ if ne $idx 0 }} {{ $cleanDate.Add "out" "-" }} {{ end }}
+                    {{ if eq (len $item) 1 }}
+                        {{ $cleanDate.Add "out" "0" }}
+                    {{ end }}
+                    {{ $cleanDate.Add "out" $item}}
+                {{ end }}
+
+                <time>{{ time.AsTime ($cleanDate.Get "out") | time.Format ":date_full" }}</time>
+            {{ end }}
+        {{ end }}
+        {{ partial "tags.html" . }}
+    </header>
+
+    {{- if .Params.image }}
+        <span class="image featured"><img src="{{ .Params.image | relURL }}" alt="{{ .Params.image_alt }}" /></span>
+    {{ else }}
+        {{ with index (where .Params.resources "cover" true) 0 }}
+            {{ $coverResource := $.Resources.Get .src}}
+            <span class="image featured"><img src="{{ $coverResource.RelPermalink }}" {{ with .alt }}alt="{{ . }}"{{ end }} /></span>
+        {{ end }}
+    {{ end }}
+
+    {{- .Content }}
+
+    {{ with .Resources.ByType "image" }}
+        {{ partial "gallery.html" . }}
+
+    {{ end }}
+{{ end }}

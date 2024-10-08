@@ -1,0 +1,31 @@
+items:
+  - sidebar_component_type: markdown-section
+    button:
+      text: Continue Reading
+      url: '#'
+    heading: Just a Subheading
+    markdown: >-
+      Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
+      Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat
+      volutpat. Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et
+      nisi etiam.
+    button_enabled: true
+  - sidebar_component_type: list-links
+    heading: Another Subheading
+    links:
+      - text: Amet turpis, feugiat et sit amet
+        url: '#'
+      - text: Ornare in hendrerit in lectus
+        url: '#'
+      - text: Semper mod quis eget mi dolore
+        url: '#'
+      - text: Consequat etiam lorem phasellus
+        url: '#'
+      - text: Amet turpis, feugiat et sit amet
+        url: '#'
+      - text: Semper mod quisturpis nisi
+        url: '#'
+    button:
+      text: More Random Links
+      url: '#'
+    button_enabled: true

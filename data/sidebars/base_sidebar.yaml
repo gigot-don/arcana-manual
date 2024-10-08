@@ -1,0 +1,27 @@
+title: base sidebar
+items:
+  - sidebar_component_type: related-content
+    options: {}
+    heading: Voir également
+    number_of_entries: 5
+  - sidebar_component_type: list-of-content
+    heading: Mon contenu tout chou
+    button: {}
+    type: post
+    orderBy: Date
+    number_of_entries: 4
+  - sidebar_component_type: list-links
+    links:
+      - text: Premier lien
+        url: bouh
+      - text: Deuxième lien
+        url: /héhé
+      - text: Lien absolu ?
+        url: https://google.fr
+    heading: Ma liste tout choute
+    button: {}
+  - sidebar_component_type: table-of-contents
+    heading: Table of Contents
+  - sidebar_component_type: markdown-section
+    heading: Ma vie mon oeuvre
+    button: {}

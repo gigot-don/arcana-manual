@@ -1,0 +1,42 @@
+fields:
+- key: type
+  title: Type of index
+  type: select
+  default: basic
+  options:
+  - basic
+  - fragments
+- key: name
+  title: Name
+  type: string
+  tip: Matches the frontmatter entry that is used to relate content items
+- key: weight
+  title: Weight
+  type: slider
+  step: 1
+  min: -100
+  max: 100
+  tip: Indicates how important a single parameter is, relative to the others. Value of 0 effectively turns an index off.
+- key: cardinalityThreshold
+  title: Cardinality Threshold
+  type: slider
+  step: 1
+  min: 0
+  max: 100
+  default: 0
+  tip: "If between 1 and 100, discards all keywords used in more than that percent of content from match search. A value of 0 means no keyword is discarded in this way. Default: 0"
+- key: applyFilter
+  title: (Fragments only) Filter matches
+  type: boolean
+  default: false
+  tip: "Only used for \"fragments\" indices"
+- key: pattern
+  title: (Date only) Matching timespan
+  type: select
+  tip: Restricting to month may be a better option for busier sites
+  default : "2006"
+  options:
+  - key: "2006"
+    text: Y - Match with all content published the same year
+  - key: "200601"
+    text: M - Match (only) with content published the same month

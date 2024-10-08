@@ -1,0 +1,13 @@
+<section>
+    {{ with .item.heading }}
+        <h3>{{ . }}</h3>
+    {{ end }}
+    {{ with .item.markdown }}
+        <p>{{ . | markdownify }}</p>
+    {{ end }}
+    {{ if .item.button_enabled }}
+        <footer>
+            <a href="{{ .item.button.url }}" class="button">{{ .item.button.text }}</a>
+        </footer>
+    {{ end }}
+</section>

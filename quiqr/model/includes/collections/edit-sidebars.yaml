@@ -1,0 +1,29 @@
+key: edit-sidebars
+title: Edit Sidebars
+description: Creating and editing sidebars
+extension: yaml
+itemtitle: Sidebar
+folder: data/sidebars
+hideIndex: true
+dataformat: yaml
+fields:
+- key: items
+  title: Sidebar Sections
+  type: accordion
+  dynFormSearchKey: sidebar_component_type
+  fields:
+  - key: sidebar_component_type
+    title: Section
+    type: select
+    multiple: false
+    options:
+    - text: Related Content
+      value: related-content
+    - text: List of Content
+      value: list-of-content
+    - text: List of Links
+      value: list-links
+    - text: Table of Contents
+      value: table-of-contents
+    - text: Markdown Section
+      value: markdown-section

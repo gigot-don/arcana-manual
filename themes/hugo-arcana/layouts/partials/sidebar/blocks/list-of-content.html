@@ -1,0 +1,27 @@
+<section>
+    {{ with .item.heading }}
+    <h3> {{ . }}</h3>
+    {{ end }}
+
+    {{ $pages := slice }}
+
+    {{ if eq .item.orderBy "Weight" }}
+        {{ $pages = .page.Site.RegularPages.ByWeight.Reverse }}
+    {{ else }}
+        {{ $pages = .page.Site.RegularPages.ByDate.Reverse }}
+    {{ end }}
+
+
+    {{ with where $pages "Type" .item.type | first (.item.number_of_entries | default 4)}}
+        <ul class="links">
+            {{ range . }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+            {{ end }}
+        </ul>
+    {{ end }}
+    {{ if .item.button_enabled }}
+        <footer>
+            <a href="{{ .item.button.url }}" class="button">{{ .item.button.text }}</a>
+        </footer>
+    {{ end }}
+</section>
