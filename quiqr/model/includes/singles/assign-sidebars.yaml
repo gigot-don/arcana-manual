@@ -4,9 +4,11 @@ file: data/sidebar_map.yaml
 fields:
 - key: dummy-info
   type: info
-  content: "Allows to customize the layout of content on a type-by-type basis
-  by including between 0 and 2 sidebars. \n\n
-  Edit the content and ordering of any one sidebar *via* the \"Edit Sidebars\" entry on the left."
+  content: >-
+    Allows to customize the layout of content groups (`kind` or `type`)
+    by including sidebars (left, right or both)
+
+    Define usable sidebars *via* the "Edit Sidebars" entry on the left menu.
 - key: map
   title: Choice of Sidebars
   type: accordion
