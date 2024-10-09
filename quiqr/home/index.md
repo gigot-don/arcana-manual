@@ -24,7 +24,7 @@ Happy Creating.
 
 ## Issues :
 - `select-from-query` crée un `null` quand on supprime son champ, ce qui empêche de rouvrir le formulaire. Facilement fixable (normalizeState -> toString)
-- `easymde` a le curseur qui revient au tout début quand on tape pas très lentement. Voir [la doc du compo react encapsulé](https://www.npmjs.com/package/react-simplemde-editor) et [cet issue](https://github.com/RIP21/react-simplemde-editor/issues/116) : manque un `useCallback` pour cacher la fonction de procès ?
+- `easymde` a le curseur qui revient au tout début quand on tape pas très lentement. Voir [la doc du compo react encapsulé](https://www.npmjs.com/package/react-simplemde-editor) et [cet issue](https://github.com/RIP21/react-simplemde-editor/issues/116) ou pire [celui-ci](https://github.com/RIP21/react-simplemde-editor/issues/209) : manque un `useCallback` pour cacher la fonction de procès ?
 - proposer d'ajouter (possiblement si flag) une option '' au select-from-query, facile en pushant dans les options
 - proposer d'ajouter un flag facile pour avoir des collections de branch bundles (**_**index.html), en particulier pour des taxonomies et termes.
 - Quiqr pas buildable, d'aucune manière : voir si la doc est à jour, sinon documenter mes essais
