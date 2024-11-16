@@ -1,0 +1,41 @@
+key: organizations
+title: Organizations
+description: For a bit of who's who -now on the collective level
+extension: md
+dataformat: yaml
+itemtitle: Organization
+hideIndex: false
+folder: content/organizations
+fields:
+- key: title
+  title: Name
+  type: string 
+- key: image
+  title: Logo
+  type: image-select
+  path: page-resources/
+- key: type
+  type: readonly
+  default: organization
+- key: organization_type
+  title: Type of Organization
+  type: string
+  tip: "Is displayed as a subtitle; useful to distinguish at a glance the nature of the organization or the relationship thereof"
+- key: website
+  title: Website
+  type: string
+  tip: "Specify here URL of their website, if applicable."
+- key: socials
+  title: Socials
+  type: accordion
+  groupdata: true
+  fields:
+  - key: platform
+    title: Platform
+    type: string
+  - key: url
+    title: URL
+    type: string
+- key: mainContent
+  title: Content (if any!)
+  type: markdown
