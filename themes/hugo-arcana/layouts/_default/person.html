@@ -1,0 +1,48 @@
+{{ define "main" }}
+  <h2>{{ .Title }}</h2>
+
+  {{ with .Params.image }}
+  <span class="image featured"><img src="{{ . | relURL }}" /></span>
+  {{ end }}
+
+  {{ with .Params.affiliations }}
+    <h3>Membre de</h3>
+    {{ with where . "current" true }}
+      <ul>
+        {{ range .}}
+          <li>{{ with site.GetPage (printf "organizations/%s" .organization) }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }} - {{ .role }} - {{ .duration }}</li>
+        {{ end }}
+      </ul>
+    {{ end }}
+    {{ with where . "current" false }}
+      <ul>
+        {{ range .}}
+          <li>{{ with site.GetPage (printf "organizations/%s" .organization) }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }} - {{ .role }} - {{ .duration }}</li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  {{ end }}
+
+
+  {{ with .Content }}
+    <h3>À propos</h3>
+    {{ . }}
+  {{ end }}
+
+  {{ with where site.RegularPages ".Params.author" .Title }}
+      <h3>Auteur·ice de </h3>
+      <ul>
+      {{ range . }}
+        <li>{{ .Params.publishDate.Format "2006 - 2 Jan" }} - <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{ end }}
+      </ul>
+  {{ end }}
+
+  {{ with .Pages }}
+    <h3>Pages apparentées :</h3>
+    {{ range . }}
+      <h4><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h4>
+    {{ end }}
+  {{ end }}
+{{ end }}
+

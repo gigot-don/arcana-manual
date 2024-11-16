@@ -1,0 +1,59 @@
+key: persons
+title: Persons
+description: For a bit of who's who
+extension: md
+dataformat: yaml
+itemtitle: Person
+hideIndex: false
+folder: content/persons
+fields:
+- key: title
+  title: Name
+  type: string
+- key: pseudonym
+  title: Pseudonyme
+  type: string
+- key: image
+  title: Photo / Avatar
+  type: image-select
+  path: page-resources/
+- key: type
+  type: readonly
+  default: person
+- key: affiliations
+  title: Affiliations
+  type: accordion
+  fields:
+  - key: org-info
+    type: info
+    content: >-
+      Only organizations added to the site (using the relevant entry in the menu on the left) can be selected.
+  - key: organization
+    title: Organization
+    type: select-from-query
+    query_glob: content/organizations/**/*.md
+    query_string: "#parent_dir[]"
+    arrayTitle: true
+  - key: role
+    title: Role
+    type: string
+  - key: current
+    title: Current position
+    type: boolean
+  - key: duration
+    title: Duration
+    type: string
+- key: socials
+  title: Socials
+  type: accordion
+  groupdata: true
+  fields:
+  - key: platform
+    title: Platform
+    type: string
+  - key: url
+    title: URL
+    type: string
+- key: mainContent
+  title: Content (if any!)
+  type: markdown
