@@ -19,6 +19,10 @@ languages:
     weight: 4
 taxonomies:
   tag: tags
+  serie: series
+  project: projects
+  person: persons
+  organization: organizations
 params:
   description: A business/corporate style responsive site template.
   images:
