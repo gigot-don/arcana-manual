@@ -1,9 +1,10 @@
 ---
 title: nouveau test
 type: post
-author: ''
+author: Jean Godon
 draft: false
 description: ''
+organizations: Portes et Plumes
 resources:
   - src: page-resources/20200120_104731.jpg
     gallery: true
@@ -30,7 +31,7 @@ imageGallery:
     alt: ''
     enabled: true
     processingHint: []
-publishdate: 2024-10-3
+publishdate: 2024-10-03
 project: ''
 series: ''
 keywords: []

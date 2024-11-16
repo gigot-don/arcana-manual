@@ -2,6 +2,8 @@
   title: Collections
   menuItems:
     - key: posts
+    - key: persons
+    - key: organizations
 
 - key: sidebars
   title: Sidebars

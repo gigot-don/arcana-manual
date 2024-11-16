@@ -29,6 +29,17 @@ fields:
   type: string
 - key: empty-douiz
   type: empty-line
+- key: taxonomies
+  type: nest
+  groupdata: false
+  fields:
+  - key: taxonomies-info
+    type: info
+    content: >-
+      ## Due to limitations on the outputs Quiqr can produce, you cannot manage the taxonomies of your site
+      from the GUI at this time. Instead directly edit the site config file (*see* [this page from the docs](https://gohugo.io/getting-started/configuration/) *to locate it*)
+      to specify your desired taxonomy configuration (*see* [this other page](https://gohugo.io/content-management/taxonomies/) for setting up the configuration)
+
 - key: markup
   title: Markup Configuration
   type: nest
