@@ -25,11 +25,6 @@
 
     {{- if .Params.image }}
         <span class="image featured"><img src="{{ .Params.image | relURL }}" alt="{{ .Params.image_alt }}" /></span>
-    {{ else }}
-        {{ with index (where .Params.resources "cover" true) 0 }}
-            {{ $coverResource := $.Resources.Get .src}}
-            <span class="image featured"><img src="{{ $coverResource.RelPermalink }}" {{ with .alt }}alt="{{ . }}"{{ end }} /></span>
-        {{ end }}
     {{ end }}
 
     {{- .Content }}

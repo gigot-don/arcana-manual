@@ -1,0 +1,35 @@
+{{ define "main" }}
+{{ $organizationPage := . }}
+  <h2>{{ .Title }}</h2>
+
+  {{ with .Params.image }}
+  <span class="image featured"><img src="{{ . }}" /></span>
+  {{ end }}
+
+  {{ with (where site.Pages "Params.type" "person") }}
+
+    <h3>Membres :</h3>
+    <ul>
+      {{ range . }}
+        {{ $personPage := . }}
+        {{ range .Params.affiliations }}
+          {{ if and (eq .current true) ($organizationPage.Eq (site.GetPage (printf "organizations/%s" .organization))) }}
+            <li><a href="{{ $personPage.Permalink }}">{{ $personPage.Title }}</a></li>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </ul>
+  {{ end }}
+
+  {{ with .Content }}
+    <h3>À propos</h3>
+    {{ . }}
+  {{ end }}
+
+  {{ with .Pages }}
+    <h3>Pages apparentées :</h3>
+    {{ range . }}
+      <h4><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h4>
+    {{ end }}
+  {{ end }}
+{{ end }}
