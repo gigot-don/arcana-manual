@@ -4,6 +4,6 @@ map:
     right_sidebar: base_sidebar
     selector_value: post
   - sidebar_selector: kind
-    left_sidebar: sidebar1
+    left_sidebar: base_sidebar
     right_sidebar: sidebar2
     selector_value: section

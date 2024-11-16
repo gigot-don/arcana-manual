@@ -39,8 +39,9 @@ fields:
     type: section
     fields:
     - key: ordered
-      title: Ordered
+      title: Display as ordered list
       type: boolean
+      tip: Generally makes list item be numbered instead of denoted by a bullet, among others
       default: false
     - key: startLevel
       title: Start Level
@@ -56,6 +57,157 @@ fields:
       min: 1
       max: 6
       default: 3
+- key: services-privacy
+  title: Services (built-in Templates / Shortcode) Configuration
+  type: nest
+  groupdata: false
+  fields:
+  - key: services-info
+    type: info
+    content: "### See [this page](https://gohugo.io/methods/site/config/) from the Hugo docs"
+  - key: services
+    title: Services
+    type: nest
+    groupdata: true
+    fields:
+    - key: disqus
+      title: Disqus
+      type: section
+      groupdata: true
+      fields:
+      - key: shortname
+        title: Shortname
+        type: string
+    - key: googleAnalytics
+      title: Google Analytics
+      type: section
+      groupdata: true
+      fields:
+      - key: id
+        title: Tag ID
+        type: string
+    - key: instagram
+      title: Instagram
+      type: section
+      groupdata: true
+      fields:
+      - key: accessToken
+        title: Access Token
+        type: string
+      - key: disableInlineCSS
+        title: Disable Inline CSS
+        type: boolean
+    - key: rss
+      title: RSS
+      type: section
+      groupdata: true
+      fields:
+      - key: rss-info
+        type: info
+        theme: bare
+        content: "Set to -1 to publish all items"
+      - key: limit
+        title: Limit
+        type: slider
+        step: 1
+        min: -1
+        max: 1000
+        default: -1
+    - key: twitter
+      title: Twitter
+      type: section
+      groupdata: true
+      fields:
+      - key: disableInlineCSS
+        title: Disable Inline CSS
+        type: boolean
+  - key: privacy
+    title: Privacy
+    type: nest
+    groupdata: true
+    fields:
+    - key: disqus
+      title: Disqus
+      type: section
+      groupdata: true
+      fields:
+      - key: disable
+        title: Disable
+        type: boolean
+        default: false
+    - key: googleAnalytics
+      title: Google Analytics
+      type: section
+      groupdata: true
+      fields:
+      - key: disable
+        title: Disable
+        type: boolean
+        default: false
+      - key: respectDoNotTrack
+        title: Respect DNT (Do Not Track)
+        type: boolean
+        default: true
+    - key: instagram
+      title: Instagram
+      type: section
+      groupdata: true
+      fields:
+      - key: disable
+        title: Disable
+        type: boolean
+        default: false
+      - key: simple
+        title: Simple
+        type: boolean
+        default: false
+    - key: twitter
+      title: Twitter
+      type: section
+      groupdata: true
+      fields:
+      - key: disable
+        title: Disable
+        type: boolean
+        default: false
+      - key: enableDNT
+        title: Enable DNT (Do Not Track)
+        type: boolean
+        default: true
+      - key: simple
+        title: Simple
+        type: boolean
+        default: false
+    - key: vimeo
+      title: Vimeo
+      type: section
+      groupdata: true
+      fields:
+      - key: disable
+        title: Disable
+        type: boolean
+        default: false
+      - key: enableDNT
+        title: Enable DNT (Do Not Track)
+        type: boolean
+        default: true
+      - key: simple
+        title: Simple
+        type: boolean
+        default: false
+    - key: youtube
+      title: Youtube
+      type: section
+      groupdata: true
+      fields:
+      - key: disable
+        title: Disable
+        type: boolean
+        default: false
+      - key: privacyEnhanced
+        title: Privacy Enhanced
+        type: boolean
+        default: true
 - key: imgProcConfig
   title: Image Processing Configuration
   type: nest
@@ -81,7 +233,7 @@ fields:
     min: 0
     max: 100
     default: 75
-    tip: "Used for internal compression config, higher values result in larger file sizes (default: 75)"
+    tip: "Used for internal compression config, higher values result in larger file sizes with 100 being uncompressed (default: 75)"
 - key: related
   title: "\"Related Content\" Configuration"
   type: nest
@@ -90,7 +242,7 @@ fields:
   - key: related-info
     title: See docs
     type: info
-    content: "## See [this page](https://gohugo.io/content-management/related/#configure-related-content) from the Hugo docs for more details."
+    content: "### See [this page](https://gohugo.io/content-management/related/#configure-related-content) from the Hugo docs for more details."
   - key: includeNewer
     title: Include Newer entries
     type: boolean
