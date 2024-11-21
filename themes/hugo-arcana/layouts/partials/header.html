@@ -9,22 +9,57 @@
         {{ with .Site.Data.globalheader.title }}{{ . | markdownify }}{{ else }}{{ .Site.Title }}{{ end }}
     </a></h1></div>
 
+    {{ $found := false }}
+    {{ $indices := slice }}
+    {{ range $firstIndex, $firstVal := .Site.Data.menus_custom.nav }}
+        {{ if $found }}
+            {{ break }}
+        {{ end }}
+
+        {{ if or (eq (strings.TrimRight "/" page.Permalink) (strings.TrimRight "/" $firstVal.url)) (eq  (strings.TrimRight "/" page.RelPermalink) (strings.TrimRight "/" $firstVal.url))}}
+            {{ $indices = slice $firstIndex -1 -1 }}
+            {{ $found = true }}
+            {{ break }}
+        {{ end }}
+        {{ range $secondIndex, $secondVal := $firstVal.children }}
+            {{ if $found }}
+                {{ break }}
+            {{ end }}
+            {{ if or (eq (strings.TrimRight "/" page.Permalink) (strings.TrimRight "/" $secondVal.url)) (eq (strings.TrimRight "/" page.RelPermalink) (strings.TrimRight "/" $secondVal.url))}}
+                {{ $indices = slice $firstIndex $secondIndex -1 }}
+                {{ $found = true }}
+                {{ break }}
+            {{ end }}
+            {{ range $thirdIndex, $thirdVal := $secondVal.children }}
+                {{ if $found }}
+                    {{ break }}
+                {{ end }}
+                {{ if or (eq (strings.TrimRight "/" page.Permalink) (strings.TrimRight "/" $thirdVal.url)) (eq (strings.TrimRight "/" page.RelPermalink) (strings.TrimRight "/" $thirdVal.url))}}
+                    {{ $indices = slice $firstIndex $secondIndex $thirdIndex }}
+                    {{ $found = true }}
+                    {{ break }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+
+    {{ end }}
+
     <nav id="nav">
         <ul>
-            {{- range .Site.Menus.main }}
-                <li class="{{ if or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}current{{ end }}">
-                    <a href="{{ .URL | default "#" }}">{{ .Name }}</a>
-                    {{- if .HasChildren -}}
+            {{- range $fI, $fV := .Site.Data.menus_custom.nav }}
+                <li class="{{ if eq $fI (index $indices 0) }}current{{ end }}">
+                    <a href="{{ $fV.url | default "#" }}">{{ $fV.text }}</a>
+                    {{- with $fV.children -}}
                     <ul>
-                        {{- range .Children }}
-                        <li class="{{ if or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}current{{ end }}">
-                            <a href="{{ .URL | default "#" }}">{{ .Name }}</a>
-                            {{- if .HasChildren -}}
+                        {{- range $sI, $sV := . }}
+                        <li class="{{ if eq $sI (index $indices 1) }}current{{ end }}">
+                            <a href="{{ $sV.url | default "#" }}">{{ $sV.text }}</a>
+                            {{- with $sV.children -}}
                             <ul>
-                                {{- range .Children }}
-                                <li class="{{ if or ($.Page.IsMenuCurrent "main" .) ($.Page.HasMenuCurrent "main" .) }}current{{ end }}">
+                                {{- range $tI, $tV := . }}
+                                <li class="{{ if eq $tI (index $indices 2) }}current{{ end }}">
                                     {{/* aoeu fix 'current' thing */}}
-                                    <a href="{{ .URL | default "#" }}">{{ .Name }}</a>
+                                    <a href="{{ $tV.url | default "#" }}">{{ $tV.text }}</a>
                                 {{- end }}
                             </ul>
                             {{- end -}}
