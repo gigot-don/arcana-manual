@@ -1,9 +1,17 @@
 - key: collections
-  title: Collections
+  title: Content Collections
   menuItems:
     - key: posts
-    - key: persons
-    - key: organizations
+    - key: play-material
+
+- key: index
+  title: Index
+  menuItems:
+  - key: organizations
+  - key: persons
+  - key: projects
+  - key: series
+  - key: games
 
 - key: sidebars
   title: Sidebars

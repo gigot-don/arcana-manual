@@ -1,0 +1,31 @@
+key: series
+title: Series
+description: For a bit of who's who
+extension: md
+dataformat: yaml
+itemtitle: Serie
+hideIndex: false
+folder: content/series
+fields:
+- key: title
+  title: Name
+  type: string
+- key: logo
+  title: Photo / Avatar
+  type: image-select
+  path: page-resources/
+- key: type
+  type: readonly
+  default: series
+- key: projects
+  title: Projects
+  type: select-from-query
+  multiple: true
+  query_glob: content/projects/**/*.md
+  query_string: "#parent_dir[]"
+- key: description
+  title: Description (short summary for appearing in lists)
+  type: string
+- key: mainContent
+  title: Content (if any!)
+  type: markdown

@@ -14,7 +14,7 @@ Happy Creating.
 # TODO :
 - [ ] Implémenter [l'Image Processing](https://gohugo.io/content-management/image-processing/) de Hugo avec les [options srcset et webp](https://dev.to/jsco/a-comprehensive-guide-to-responsive-images-picture-srcset-source-etc-4adj) pour les images en utilisant les breakpoints du thème - voir le [page speed handbook](https://codestitch.app/page-speed-handbook)
 - [ ] Créer une collection de documents de jeu
-- [ ] Créer les collections/taxo de personnes, d'organisations
+- [x] Créer les collections/taxo de personnes, d'organisations
 - [ ] Créer une collection de projets, de series, donner les champs correspondants aux posts
 - [ ] Implémenter l'affichage en tête de post d'auteur·ices et dates (lastmod)
 - [ ] Modifier le template baseof pour afficher correctement `menu_custom` plutôt que `menus.main`
@@ -23,10 +23,10 @@ Happy Creating.
 
 
 ## Issues :
-- `select-from-query` crée un `null` quand on supprime son champ, ce qui empêche de rouvrir le formulaire. Facilement fixable (normalizeState -> toString)
-- `easymde` a le curseur qui revient au tout début quand on tape pas très lentement. Voir [la doc du compo react encapsulé](https://www.npmjs.com/package/react-simplemde-editor) et [cet issue](https://github.com/RIP21/react-simplemde-editor/issues/116) ou pire [celui-ci](https://github.com/RIP21/react-simplemde-editor/issues/209) : manque un `useCallback` pour cacher la fonction de procès ?
+- `select-from-query` crée un `null` quand on supprime son champ, ce qui empêche de rouvrir le formulaire. Facilement fixable (normalizeState -> toString) => commit sur une branche spéciale prêt
+- `easymde` a le curseur qui revient au tout début quand on tape pas très lentement. Voir [la doc du compo react encapsulé](https://www.npmjs.com/package/react-simplemde-editor) et [cet issue](https://github.com/RIP21/react-simplemde-editor/issues/116) ou pire [celui-ci](https://github.com/RIP21/react-simplemde-editor/issues/209) : manque un `useCallback` pour cacher la fonction de procès ? => commit sur une branche spéciale prêt (mais qualification `React.`xxx ?)
 - proposer d'ajouter (possiblement si flag) une option '' au select-from-query, facile en pushant dans les options
-- proposer d'ajouter un flag facile pour avoir des collections de branch bundles (**_**index.html), en particulier pour des taxonomies et termes.
+- proposer d'ajouter un flag facile pour avoir des collections de branch bundles (**_**index.html), en particulier pour des taxonomies et termes. => lignes à gérer : `workspace-services.js` l.308 et l.351
 - Quiqr pas buildable, d'aucune manière : voir si la doc est à jour, sinon documenter mes essais
 
 ❤️ Quiqr

@@ -1,0 +1,34 @@
+key: games
+title: Games
+description: Games we provide resources for
+extension: md
+dataformat: yaml
+itemtitle: Game
+hideIndex: false
+folder: content/games
+fields:
+- key: title
+  title: Title
+  type: string 
+- key: authors
+  title: Authors
+  type: leaf-array
+  field:
+  - key: author
+    type: string
+- key: image
+  title: Logo
+  type: image-select
+  path: page-resources/
+- key: type
+  type: readonly
+  default: game
+- key: tags
+  title: Tags
+  type: chips
+- key: description
+  title: Description (for listings, metadata...)
+  type: string
+- key: mainContent
+  title: Content (if any!)
+  type: markdown

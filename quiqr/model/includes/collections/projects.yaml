@@ -1,0 +1,25 @@
+key: projects
+title: Projects
+description: For a bit of who's who
+extension: md
+dataformat: yaml
+itemtitle: Project
+hideIndex: false
+folder: content/projects
+fields:
+- key: title
+  title: Name
+  type: string
+- key: logo
+  title: Photo / Avatar
+  type: image-select
+  path: page-resources/
+- key: type
+  type: readonly
+  default: project
+- key: description
+  title: Description (short summary for appearing in lists)
+  type: string
+- key: mainContent
+  title: Content (if any!)
+  type: markdown
