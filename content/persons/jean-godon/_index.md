@@ -16,6 +16,7 @@ affiliations:
     current: false
     duration: 1371-
 socials: []
+description: ''
 
 ---
 
@@ -23,5 +24,5 @@ Commodi aspernatur omnis eveniet explicabo est non. Enim animi provident sequi. 
 
 Aspernatur qui dolor rerum impedit similique cupiditate. Quia accusamus voluptatibus id. Quia dolore dignissimos dolores rerum similique rerum. Eius voluptatem omnis sunt. Minus illum molestiae dolor beatae aut quo quia.
 
-Assumenda cupiditate aut hic dicta distinctio nulla rerum repudiandae. Repellendus culpa sint amet. Similique voluptatem ut ab id aspernatur laborum illo omnis. Corporis voluptas recusandae quisquam minus. Fugit aspernatur voluptatem vitae quisquam repellat ex.
+Assumenda cupiditate aut hic dicta distinctio nulla rerum repudiandae. Repellendus culpa sint amet. Similique voluptatem ut ab id aspernatur laborum illo omnis. Corporis voluptas recusandae quisquam minus. Fugit aspernatur voluptatem vitae quisquam repellat ex. 
 

@@ -1,6 +1,6 @@
 ---
 title: Alexis Berrier
-pseudonym: '"Morithil"'
+pseudonym: Morithil
 type: person
 affiliations:
   - organization: crazy-orc
@@ -8,8 +8,13 @@ affiliations:
     current: true
     duration: 2018-
 socials: []
+description: Le prédid'orc
 
 ---
+
+
+
+
 
 
 

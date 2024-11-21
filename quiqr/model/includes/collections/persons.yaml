@@ -13,6 +13,9 @@ fields:
 - key: pseudonym
   title: Pseudonyme
   type: string
+- key: localization
+  title: Localization
+  type: string
 - key: image
   title: Photo / Avatar
   type: image-select
@@ -54,6 +57,9 @@ fields:
   - key: url
     title: URL
     type: string
+- key: description
+  title: Description (short summary for appearing in lists)
+  type: string
 - key: mainContent
   title: Content (if any!)
   type: markdown

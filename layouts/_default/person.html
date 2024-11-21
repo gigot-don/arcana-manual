@@ -1,5 +1,6 @@
 {{ define "main" }}
   <h2>{{ .Title }}</h2>
+  {{ with .Params.pseudonym }}<h4>"{{.}}"</h4>{{end}}
 
   {{ with .Params.image }}
   <span class="image featured"><img src="{{ . | relURL }}" /></span>

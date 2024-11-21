@@ -12,6 +12,7 @@ affiliations:
     current: true
     duration: 2024-
 socials: []
+description: Le présijean
 
 ---
 
