@@ -1,9 +1,53 @@
 main:
-  - text: Bla
-    url: zou
+  - text: Accueil
+    url: /
+    children: []
+  - text: Posts
+    url: /posts
+    children: []
+  - text: L'association
+    url: /l-association
     children:
-      - text: Héhou
-        url: ha
+      - text: Qui sommes-nous ?
+        url: /l-association
+        children: []
+      - text: Manifeste
+        url: /l-association/manifeste
+        children: []
+      - text: Nos projets
+        url: /projects
         children:
-          - text: Zabouzou
-            url: he
+          - text: Recherche théorético-expérimentale
+            url: /projects/recherche-theoretico-experimentale
+          - text: Animations & Prestations
+            url: /projects/animation-et-prestation
+      - text: Documents & Rapports
+        url: /l-association/documents
+        children:
+          - text: Statuts
+            url: ''
+          - text: Procès verbaux (AG, CA)
+            url: ''
+          - text: Rapports d'activité
+            url: ''
+      - text: Nous suivre / Contact
+        url: /l-association/nous-suivre
+        children: []
+  - text: Liens utiles
+    url: ''
+    children:
+      - text: Index
+        url: ''
+        children:
+          - text: Organisations
+            url: /organizations
+          - text: Personnes
+            url: /persons
+          - text: Jeux & Matériel
+            url: /games
+      - text: Tous nos liens
+        url: /liens
+        children: []
+      - text: Evenements
+        url: /evenements
+        children: []
