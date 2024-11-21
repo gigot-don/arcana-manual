@@ -11,6 +11,7 @@ socials:
     url: https://instagram.com/portesetplumes
   - platform: campsite
     url: https://campsite.bio/ppjdr
+description: La mifa \m/
 
 ---
 

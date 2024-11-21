@@ -10,6 +10,9 @@ fields:
 - key: title
   title: Name
   type: string 
+- key: localization
+  title: Localization
+  type: string
 - key: image
   title: Logo
   type: image-select
@@ -36,6 +39,9 @@ fields:
   - key: url
     title: URL
     type: string
+- key: description
+  title: Description (for listings, metadata...)
+  type: string
 - key: mainContent
   title: Content (if any!)
   type: markdown
