@@ -1,7 +1,8 @@
-baseURL: https://example.org/
+baseURL: https://site.don-gigot.com
 languageCode: fr-FR
 title: Portes et Plumes?
 theme: hugo-arcana
+summaryLength: 25
 copyright: © Untitled. All rights reserved
 defaultContentLanguage: en
 languages:
@@ -96,3 +97,34 @@ related:
   includeNewer: false
   toLower: false
   indices: []
+services:
+  disqus:
+    shortname: ''
+  googleAnalytics:
+    id: ''
+  instagram:
+    accessToken: ''
+    disableInlineCSS: false
+  rss: {}
+  twitter:
+    disableInlineCSS: false
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    disable: false
+    respectDoNotTrack: true
+  instagram:
+    disable: false
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: true
+    simple: false
+  vimeo:
+    disable: false
+    enableDNT: true
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true

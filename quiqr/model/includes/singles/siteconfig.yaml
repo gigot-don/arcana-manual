@@ -39,7 +39,14 @@ fields:
       ## Due to limitations on the outputs Quiqr can produce, you cannot manage the taxonomies of your site
       from the GUI at this time. Instead directly edit the site config file (*see* [this page from the docs](https://gohugo.io/getting-started/configuration/) *to locate it*)
       to specify your desired taxonomy configuration (*see* [this other page](https://gohugo.io/content-management/taxonomies/) for setting up the configuration)
-
+- key: summaryLength
+  title: Length of Summaries
+  type: slider
+  step: 1
+  min: 1
+  max: 100
+  default: 25
+  tip: "Min. number of words that appear in summary; Hugo will truncate at the first end of paragraph after this number is reached."
 - key: markup
   title: Markup Configuration
   type: nest
