@@ -4,8 +4,8 @@
     - key: posts
     - key: play-material
 
-- key: index
-  title: Index
+- key: taxonomies
+  title: Taxonomies
   menuItems:
   - key: organizations
   - key: persons

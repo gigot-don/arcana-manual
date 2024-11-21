@@ -2,8 +2,8 @@ key: menus_custom
 title: Menus
 file: data/menus_custom.yaml
 fields:
-- key: main
-  title: Main Menu
+- key: nav
+  title: Nav Menu
   type: accordion
   groupdata: true
   fields:

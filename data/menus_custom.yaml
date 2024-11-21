@@ -1,4 +1,4 @@
-main:
+nav:
   - text: Accueil
     url: /
     children: []
@@ -43,8 +43,10 @@ main:
             url: /organizations
           - text: Personnes
             url: /persons
-          - text: Jeux & Matériel
+          - text: Jeux
             url: /games
+          - text: Matériel de jeu
+            url: /play-material
       - text: Tous nos liens
         url: /liens
         children: []
