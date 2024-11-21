@@ -20,6 +20,9 @@ fields:
   title: Logo
   type: image-select
   path: page-resources/
+- key: website
+  title: Website URL
+  type: string
 - key: type
   type: readonly
   default: game
