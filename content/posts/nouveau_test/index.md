@@ -31,11 +31,12 @@ imageGallery:
     alt: ''
     enabled: true
     processingHint: []
-publishdate: 2024-10-03
-project: ''
-series: ''
+publishdate: '2024-10-03T00:00:00.000Z'
+projects: Recherche-theoretico-experimentale
+series: les-ateliers
 keywords: []
 image: page-resources/20200120_104731.jpg
+projects: recherche-theoretico-experimentale
 
 ---
 
