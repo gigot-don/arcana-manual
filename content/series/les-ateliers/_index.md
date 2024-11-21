@@ -1,6 +1,6 @@
 ---
 title: Les Ateliers
-type: project
+type: series
 projects:
   - recherche-theoretico-experimentale
 

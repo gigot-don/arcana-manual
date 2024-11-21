@@ -1,6 +1,6 @@
 ---
 title: 'Plurielles : le Jeu'
-type: project
+type: series
 projects: animation-et-prestations
 
 ---

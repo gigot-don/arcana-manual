@@ -1,9 +1,12 @@
 ---
 title: Les Explorations
-type: project
+type: series
 projects: recherche-theoretico-experimentale
+description: ''
 
 ---
+
+
 
 
 
