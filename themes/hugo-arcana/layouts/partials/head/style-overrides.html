@@ -173,6 +173,16 @@
         color: {{ $.Site.Data.design.colors.fgObscure }};
     }
 
+    .dropotron li.current>a{
+        color: {{ $.Site.Data.design.colors.fgAccent }};
+        font-weight: 600;
+    }
+
+    .dropotron li>a:has(+ ul)::after, #nav li>a:has(+ ul)::after{
+        content: ' 〉';
+        align: right;
+    }
+
     .dropotron>li.active>a,
     .dropotron>li:hover>a {
         color: {{ $.Site.Data.design.colors.fgAccent }};

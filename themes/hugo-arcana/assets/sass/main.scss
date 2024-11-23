@@ -895,14 +895,16 @@
             line-height: 2em;
             padding: 0 1.1em 0 1em;
 
+            &.active {
+                > a {
+                    color: _palette(accent, fg)
+                }
+            }
+
             > a {
                 color: _palette(obscure, fg);
                 text-decoration: none;
                 border: 0;
-
-                &.active {
-                    color: _palette(accent, fg)
-                }
             }
 
             &.active,

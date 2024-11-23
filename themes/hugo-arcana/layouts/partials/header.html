@@ -47,17 +47,20 @@
     <nav id="nav">
         <ul>
             {{- range $fI, $fV := .Site.Data.menus_custom.nav }}
-                <li class="{{ if eq $fI (index $indices 0) }}current{{ end }}">
+                {{ $inCurrentFirstLevel := eq $fI (index $indices 0) }}
+                <li class="{{ if $inCurrentFirstLevel }}current{{ end }}">
                     <a href="{{ $fV.url | default "#" }}">{{ $fV.text }}</a>
                     {{- with $fV.children -}}
                     <ul>
                         {{- range $sI, $sV := . }}
-                        <li class="{{ if eq $sI (index $indices 1) }}current{{ end }}">
+                        {{ $inCurrentSecondLevel := eq $sI (index $indices 1) }}
+                        <li class="{{ if and $inCurrentFirstLevel $inCurrentSecondLevel }}current{{ end }}">
                             <a href="{{ $sV.url | default "#" }}">{{ $sV.text }}</a>
                             {{- with $sV.children -}}
                             <ul>
                                 {{- range $tI, $tV := . }}
-                                <li class="{{ if eq $tI (index $indices 2) }}current{{ end }}">
+                                {{ $inCurrentThirdLevel := eq $tI (index $indices 2)}}
+                                <li class="{{ if and $inCurrentFirstLevel $inCurrentSecondLevel $inCurrentThirdLevel }}current{{ end }}">
                                     {{/* aoeu fix 'current' thing */}}
                                     <a href="{{ $tV.url | default "#" }}">{{ $tV.text }}</a>
                                 {{- end }}
