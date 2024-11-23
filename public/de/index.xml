@@ -1,87 +1,87 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Startseite on Portes et Plumes?</title>
-    <link>http://localhost:13131/de/</link>
-    <description>Recent content in Startseite on Portes et Plumes?</description>
+    <title>Startseite on Portes et Plumes</title>
+    <link>https://site.don-gigot.com/de/</link>
+    <description>Recent content in Startseite on Portes et Plumes</description>
     <generator>Hugo</generator>
     <language>de</language>
     <copyright>© Untitled. All rights reserved</copyright>
     <image>
-        <url>http://localhost:13131/images/petp.png</url>
-        <title>Startseite on Portes et Plumes?</title>
-        <link>http://localhost:13131/de/</link>
+        <url>https://site.don-gigot.com/images/petp.png</url>
+        <title>Startseite on Portes et Plumes</title>
+        <link>https://site.don-gigot.com/de/</link>
     </image>
     <lastBuildDate>Mon, 06 Jan 2020 00:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:13131/de/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://site.don-gigot.com/de/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linke Seitenleiste</title>
-      <link>http://localhost:13131/de/left-sidebar/</link>
+      <link>https://site.don-gigot.com/de/left-sidebar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:13131/de/left-sidebar/</guid>
+      <guid>https://site.don-gigot.com/de/left-sidebar/</guid>
       <description>&lt;p&gt;Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.&#xA;Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.&#xA;Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi&#xA;consequat etiam lorem ipsum dolor sit amet nullam.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rechte Seitenleiste</title>
-      <link>http://localhost:13131/de/right-sidebar/</link>
+      <link>https://site.don-gigot.com/de/right-sidebar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:13131/de/right-sidebar/</guid>
+      <guid>https://site.don-gigot.com/de/right-sidebar/</guid>
       <description>&lt;p&gt;Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.&#xA;Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.&#xA;Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi&#xA;consequat etiam lorem ipsum dolor sit amet nullam.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Zwei Seitenleisten</title>
-      <link>http://localhost:13131/de/two-sidebar/</link>
+      <link>https://site.don-gigot.com/de/two-sidebar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:13131/de/two-sidebar/</guid>
+      <guid>https://site.don-gigot.com/de/two-sidebar/</guid>
       <description>&lt;p&gt;Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.&#xA;Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.&#xA;Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi&#xA;consequat etiam lorem ipsum dolor sit amet nullam.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Keine Seitenleiste</title>
-      <link>http://localhost:13131/de/no-sidebar/</link>
+      <link>https://site.don-gigot.com/de/no-sidebar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:13131/de/no-sidebar/</guid>
+      <guid>https://site.don-gigot.com/de/no-sidebar/</guid>
       <description>&lt;p&gt;Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.&#xA;Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.&#xA;Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi&#xA;consequat etiam lorem ipsum dolor sit amet nullam.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Der sechste Post</title>
-      <link>http://localhost:13131/de/posts/sixth/</link>
+      <link>https://site.don-gigot.com/de/posts/sixth/</link>
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/de/posts/sixth/</guid>
+      <guid>https://site.don-gigot.com/de/posts/sixth/</guid>
       <description>&lt;p&gt;Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet&#xA;mattis, sed a rutrum accumsan sed. Suspendisse eu.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Der fünfte Post</title>
-      <link>http://localhost:13131/de/posts/fifth/</link>
+      <link>https://site.don-gigot.com/de/posts/fifth/</link>
       <pubDate>Sun, 05 Jan 2020 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/de/posts/fifth/</guid>
+      <guid>https://site.don-gigot.com/de/posts/fifth/</guid>
       <description>&lt;p&gt;Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet&#xA;mattis, sed a rutrum accumsan sed. Suspendisse eu.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Der vierte Post</title>
-      <link>http://localhost:13131/de/posts/fourth/</link>
+      <link>https://site.don-gigot.com/de/posts/fourth/</link>
       <pubDate>Sat, 04 Jan 2020 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/de/posts/fourth/</guid>
+      <guid>https://site.don-gigot.com/de/posts/fourth/</guid>
       <description>&lt;p&gt;Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet&#xA;mattis, sed a rutrum accumsan sed. Suspendisse eu.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Der dritte Post</title>
-      <link>http://localhost:13131/de/posts/third/</link>
+      <link>https://site.don-gigot.com/de/posts/third/</link>
       <pubDate>Fri, 03 Jan 2020 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/de/posts/third/</guid>
+      <guid>https://site.don-gigot.com/de/posts/third/</guid>
       <description>&lt;p&gt;Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet&#xA;mattis, sed a rutrum accumsan sed. Suspendisse eu.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Der zweite Post</title>
-      <link>http://localhost:13131/de/posts/second/</link>
+      <link>https://site.don-gigot.com/de/posts/second/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/de/posts/second/</guid>
+      <guid>https://site.don-gigot.com/de/posts/second/</guid>
       <description>&lt;p&gt;Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet&#xA;mattis, sed a rutrum accumsan sed. Suspendisse eu.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Der erste Post</title>
-      <link>http://localhost:13131/de/posts/first/</link>
+      <link>https://site.don-gigot.com/de/posts/first/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/de/posts/first/</guid>
+      <guid>https://site.don-gigot.com/de/posts/first/</guid>
       <description>&lt;p&gt;Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet&#xA;mattis, sed a rutrum accumsan sed. Suspendisse eu.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Duis Neque on Portes et Plumes?</title>
-    <link>http://localhost:13131/es/tags/duis-neque/</link>
-    <description>Recent content in Duis Neque on Portes et Plumes?</description>
+    <title>Duis Neque on Portes et Plumes</title>
+    <link>https://site.don-gigot.com/es/tags/duis-neque/</link>
+    <description>Recent content in Duis Neque on Portes et Plumes</description>
     <generator>Hugo</generator>
     <language>es</language>
     <copyright>© Untitled. All rights reserved</copyright>
     <image>
-        <url>http://localhost:13131/images/petp.png</url>
-        <title>Duis Neque on Portes et Plumes?</title>
-        <link>http://localhost:13131/es/tags/duis-neque/</link>
+        <url>https://site.don-gigot.com/images/petp.png</url>
+        <title>Duis Neque on Portes et Plumes</title>
+        <link>https://site.don-gigot.com/es/tags/duis-neque/</link>
     </image>
     <lastBuildDate>Mon, 06 Jan 2020 00:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:13131/es/tags/duis-neque/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://site.don-gigot.com/es/tags/duis-neque/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>La Sexta Cosa</title>
-      <link>http://localhost:13131/es/posts/sixth/</link>
+      <link>https://site.don-gigot.com/es/posts/sixth/</link>
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/es/posts/sixth/</guid>
+      <guid>https://site.don-gigot.com/es/posts/sixth/</guid>
       <description>&lt;p&gt;Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet&#xA;mattis, sed a rutrum accumsan sed. Suspendisse eu.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt.&lt;/p&gt;</description>
     </item>
     <item>
       <title>La Tercera Cosa</title>
-      <link>http://localhost:13131/es/posts/third/</link>
+      <link>https://site.don-gigot.com/es/posts/third/</link>
       <pubDate>Fri, 03 Jan 2020 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/es/posts/third/</guid>
+      <guid>https://site.don-gigot.com/es/posts/third/</guid>
       <description>&lt;p&gt;Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet&#xA;mattis, sed a rutrum accumsan sed. Suspendisse eu.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt.&lt;/p&gt;</description>
     </item>
     <item>
       <title>La Segunda Cosa</title>
-      <link>http://localhost:13131/es/posts/second/</link>
+      <link>https://site.don-gigot.com/es/posts/second/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/es/posts/second/</guid>
+      <guid>https://site.don-gigot.com/es/posts/second/</guid>
       <description>&lt;p&gt;Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet&#xA;mattis, sed a rutrum accumsan sed. Suspendisse eu.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt.&lt;/p&gt;</description>
     </item>
   </channel>

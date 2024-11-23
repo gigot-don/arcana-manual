@@ -1,101 +1,101 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Portes et Plumes?</title>
-    <link>http://localhost:13131/tags/</link>
-    <description>Recent content in Tags on Portes et Plumes?</description>
+    <title>Tags on Portes et Plumes</title>
+    <link>https://site.don-gigot.com/tags/</link>
+    <description>Recent content in Tags on Portes et Plumes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Untitled. All rights reserved</copyright>
     <image>
-        <url>http://localhost:13131/images/petp.png</url>
-        <title>Tags on Portes et Plumes?</title>
-        <link>http://localhost:13131/tags/</link>
+        <url>https://site.don-gigot.com/images/petp.png</url>
+        <title>Tags on Portes et Plumes</title>
+        <link>https://site.don-gigot.com/tags/</link>
     </image>
     <lastBuildDate>Thu, 03 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:13131/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://site.don-gigot.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Belonging Outside Belonging</title>
-      <link>http://localhost:13131/tags/belonging-outside-belonging/</link>
+      <link>https://site.don-gigot.com/tags/belonging-outside-belonging/</link>
       <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:13131/tags/belonging-outside-belonging/</guid>
+      <guid>https://site.don-gigot.com/tags/belonging-outside-belonging/</guid>
       <description></description>
     </item>
     <item>
       <title>No Dice No Master</title>
-      <link>http://localhost:13131/tags/no-dice-no-master/</link>
+      <link>https://site.don-gigot.com/tags/no-dice-no-master/</link>
       <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:13131/tags/no-dice-no-master/</guid>
+      <guid>https://site.don-gigot.com/tags/no-dice-no-master/</guid>
       <description></description>
     </item>
     <item>
       <title>Sans MJ/Tou·tes MJs</title>
-      <link>http://localhost:13131/tags/sans-mj/toutes-mjs/</link>
+      <link>https://site.don-gigot.com/tags/sans-mj/toutes-mjs/</link>
       <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:13131/tags/sans-mj/toutes-mjs/</guid>
+      <guid>https://site.don-gigot.com/tags/sans-mj/toutes-mjs/</guid>
       <description></description>
     </item>
     <item>
       <title>:Puke:</title>
-      <link>http://localhost:13131/tags/puke/</link>
+      <link>https://site.don-gigot.com/tags/puke/</link>
       <pubDate>Tue, 08 Feb 2022 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/tags/puke/</guid>
+      <guid>https://site.don-gigot.com/tags/puke/</guid>
       <description></description>
     </item>
     <item>
       <title>Squiggity</title>
-      <link>http://localhost:13131/tags/squiggity/</link>
+      <link>https://site.don-gigot.com/tags/squiggity/</link>
       <pubDate>Tue, 08 Feb 2022 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/tags/squiggity/</guid>
+      <guid>https://site.don-gigot.com/tags/squiggity/</guid>
       <description></description>
     </item>
     <item>
       <title>Trad</title>
-      <link>http://localhost:13131/tags/trad/</link>
+      <link>https://site.don-gigot.com/tags/trad/</link>
       <pubDate>Tue, 08 Feb 2022 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/tags/trad/</guid>
+      <guid>https://site.don-gigot.com/tags/trad/</guid>
       <description></description>
     </item>
     <item>
       <title>Duis Neque</title>
-      <link>http://localhost:13131/tags/duis-neque/</link>
+      <link>https://site.don-gigot.com/tags/duis-neque/</link>
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/tags/duis-neque/</guid>
+      <guid>https://site.don-gigot.com/tags/duis-neque/</guid>
       <description></description>
     </item>
     <item>
       <title>Example</title>
-      <link>http://localhost:13131/tags/example/</link>
+      <link>https://site.don-gigot.com/tags/example/</link>
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/tags/example/</guid>
+      <guid>https://site.don-gigot.com/tags/example/</guid>
       <description></description>
     </item>
     <item>
       <title>Lorem Ipsum</title>
-      <link>http://localhost:13131/tags/lorem-ipsum/</link>
+      <link>https://site.don-gigot.com/tags/lorem-ipsum/</link>
       <pubDate>Sun, 05 Jan 2020 00:00:00 +0100</pubDate>
-      <guid>http://localhost:13131/tags/lorem-ipsum/</guid>
+      <guid>https://site.don-gigot.com/tags/lorem-ipsum/</guid>
       <description></description>
     </item>
     <item>
       <title>Content</title>
-      <link>http://localhost:13131/tags/content/</link>
+      <link>https://site.don-gigot.com/tags/content/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:13131/tags/content/</guid>
+      <guid>https://site.don-gigot.com/tags/content/</guid>
       <description></description>
     </item>
     <item>
       <title>Examples</title>
-      <link>http://localhost:13131/tags/examples/</link>
+      <link>https://site.don-gigot.com/tags/examples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:13131/tags/examples/</guid>
+      <guid>https://site.don-gigot.com/tags/examples/</guid>
       <description></description>
     </item>
     <item>
       <title>Sidebar</title>
-      <link>http://localhost:13131/tags/sidebar/</link>
+      <link>https://site.don-gigot.com/tags/sidebar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:13131/tags/sidebar/</guid>
+      <guid>https://site.don-gigot.com/tags/sidebar/</guid>
       <description></description>
     </item>
   </channel>

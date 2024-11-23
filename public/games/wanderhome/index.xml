@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wanderhome on Portes et Plumes?</title>
-    <link>http://localhost:13131/games/wanderhome/</link>
-    <description>Recent content in Wanderhome on Portes et Plumes?</description>
+    <title>Wanderhome on Portes et Plumes</title>
+    <link>https://site.don-gigot.com/games/wanderhome/</link>
+    <description>Recent content in Wanderhome on Portes et Plumes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Untitled. All rights reserved</copyright>
     <image>
-        <url>http://localhost:13131/images/petp.png</url>
-        <title>Wanderhome on Portes et Plumes?</title>
-        <link>http://localhost:13131/games/wanderhome/</link>
+        <url>https://site.don-gigot.com/images/petp.png</url>
+        <title>Wanderhome on Portes et Plumes</title>
+        <link>https://site.don-gigot.com/games/wanderhome/</link>
     </image>
     <lastBuildDate>Thu, 03 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:13131/games/wanderhome/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://site.don-gigot.com/games/wanderhome/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>nouveau test</title>
-      <link>http://localhost:13131/posts/nouveau_test/</link>
+      <link>https://site.don-gigot.com/posts/nouveau_test/</link>
       <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:13131/posts/nouveau_test/</guid>
-      <enclosure url="http://localhost:13131/posts/nouveau_test/page-resources/20200120_104731.jpg" length="1831004" type="image/jpeg"/>
+      <guid>https://site.don-gigot.com/posts/nouveau_test/</guid>
+      <enclosure url="https://site.don-gigot.com/posts/nouveau_test/page-resources/20200120_104731.jpg" length="1831004" type="image/jpeg"/>
       <description>&lt;h2 id=&#34;1-2-1-2&#34;&gt;1 2 1 2&lt;/h2&gt;&#xA;&lt;h3 id=&#34;essai-de-sonorisation&#34;&gt;Essai de sonorisation&amp;hellip;&lt;/h3&gt;&#xA;&lt;h2 id=&#34;systèmes-nominaux&#34;&gt;Systèmes nominaux.&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Fiche Personnage &#34;pesTival&#34;</title>
-      <link>http://localhost:13131/playmaterial/fdp-wanderhome-festival/</link>
+      <link>https://site.don-gigot.com/playmaterial/fdp-wanderhome-festival/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0200</pubDate>
-      <guid>http://localhost:13131/playmaterial/fdp-wanderhome-festival/</guid>
-      <enclosure url="http://localhost:13131/playmaterial/fdp-wanderhome-festival/page-resources/shepherd_by_letty_wilson.jpg" length="697672" type="image/jpeg"/>
+      <guid>https://site.don-gigot.com/playmaterial/fdp-wanderhome-festival/</guid>
+      <enclosure url="https://site.don-gigot.com/playmaterial/fdp-wanderhome-festival/page-resources/shepherd_by_letty_wilson.jpg" length="697672" type="image/jpeg"/>
       <description></description>
     </item>
   </channel>

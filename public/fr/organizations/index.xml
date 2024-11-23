@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Organizations on Portes et Plumes?</title>
-    <link>http://localhost:13131/fr/organizations/</link>
-    <description>Recent content in Organizations on Portes et Plumes?</description>
+    <title>Organizations on Portes et Plumes</title>
+    <link>https://site.don-gigot.com/fr/organizations/</link>
+    <description>Recent content in Organizations on Portes et Plumes</description>
     <generator>Hugo</generator>
     <language>fr</language>
     <copyright>© Untitled. All rights reserved</copyright>
     <image>
-        <url>http://localhost:13131/images/petp.png</url>
-        <title>Organizations on Portes et Plumes?</title>
-        <link>http://localhost:13131/fr/organizations/</link>
+        <url>https://site.don-gigot.com/images/petp.png</url>
+        <title>Organizations on Portes et Plumes</title>
+        <link>https://site.don-gigot.com/fr/organizations/</link>
     </image>
-    <atom:link href="http://localhost:13131/fr/organizations/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://site.don-gigot.com/fr/organizations/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
