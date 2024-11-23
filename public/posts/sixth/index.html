@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head><title>The Sixth Thing | Portes et Plumes</title>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=13131&amp;path=livereload" data-no-instant defer></script><title>The Sixth Thing | Portes et Plumes</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
@@ -13,12 +13,311 @@
 
 
 
+
+<style>
+
+    body {
+      background: #f7f7f7 url('images/bg01.png');
+    }
+
+    
+    body, input, select, textarea {
+        color: #474747;
+    }
+
+    a {
+        color: #37c0fb;
+    }
+
+    a:hover {
+        color: #37c0fb;
+    }
+
+    hr {
+        border-top: solid 1px #e0e0e0;
+    }
+
+    blockquote {
+        border-left: solid 0.5em #e0e0e0;
+    }
+
+    header p {
+        color: #999;
+    }
+
+    header.major p {
+        border-top: solid 1px #e0e0e0;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea {
+        border: solid 1px #e0e0e0;
+        color: #4c4c4c;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        border-color: #37c0fb;
+    }
+
+    ::-webkit-input-placeholder
+    :-moz-placeholder,
+    ::-moz-placeholder,
+    :-ms-input-placeholder {
+        color: #999;
+    }
+
+    .icon.major {
+        background-color: #37c0fb;
+        color: #474747;
+        box-shadow: 0 0 0 7px white, 0 0 0 8px #e0e0e0;
+    }
+
+    ul.menu li {
+        border-left: solid 1px #e0e0e0;
+    }
+
+    table.default tbody tr {
+        border-bottom: solid 1px #e0e0e0;
+    }
+
+    table.default tbody thead {
+        background-color: ;
+        color: #474747;
+    }
+
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button,
+    .button {
+        background-color: #37c0fb;
+        color: white;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="button"]:hover,
+    button:hover,
+    .button:hover {
+        background-color: #37c0fb;
+        color: white;
+        filter: brightness(1.05);
+    }
+
+    input[type="submit"]:active,
+    input[type="reset"]:active,
+    input[type="button"]:active,
+    button:active,
+    .button:active {
+        background-color: #37c0fb;
+        color: white;
+        filter: brightness(0.95);
+    }
+
+    input[type="submit"].alt,
+    input[type="reset"].alt,
+    input[type="button"].alt,
+    button.alt,
+    .button.alt {
+        background-color: ;
+        color: white;
+    }
+
+    input[type="submit"].alt:hover,
+    input[type="reset"].alt:hover,
+    input[type="button"].alt:hover,
+    button.alt:hover,
+    .button.alt:hover {
+        background-color: ;
+        filter: brightness(1.05);
+    }
+
+    input[type="submit"].alt:active,
+    input[type="reset"].alt:active,
+    input[type="button"].alt:active,
+    button.alt:active,
+    .button.alt:active {
+        background-color: ;
+        filter: brightness(0.95);
+    }
+
+    #header {
+        background-color: white;
+    }
+
+    #nav {
+        background-color: #333;
+    }
+
+    #nav:after {
+        background-color: #37c0fb;
+    }
+
+    #nav>ul>li a {
+        color: #c0c0c0;
+    }
+
+    #nav>ul>li:hover a {
+        color: white;
+    }
+
+    #nav>ul>li.current:before {
+        background-color: #37c0fb;
+    }
+        
+    #nav>ul>li.current a {
+        color: white;
+    }
+        
+    #nav>ul>li.active a {
+        color: white;
+    }
+
+    .dropotron {
+        background-color: #333;
+        color: #37c0fb;
+    }
+
+    .dropotron>li>a {
+        color: #c0c0c0;
+    }
+
+    .dropotron li.current>a{
+        color: white;
+        font-weight: 600;
+    }
+
+    .dropotron>li>a:has(+ ul)::after, #nav ul>li>a:has(+ ul)::after{
+        content: ' 〉';
+    }
+
+    .dropotron>li.active>a,
+    .dropotron>li:hover>a {
+        color: white;
+    }
+
+    #banner header {
+        color: white;
+    }
+
+    #banner header h2 a {
+        border-bottom-color: white;
+        
+    }
+
+    #banner header h2 a:hover {
+        border-bottom-color: transparent;
+    }
+
+    .wrapper.style1,
+    .wrapper.style2 {
+        background-color: white;
+    }
+
+    .wrapper.style3 {
+        background-color: #37c0fb;
+        color: white;
+    }
+
+    .wrapper.style3 .button {
+        background-color: white;
+        color: #474747;
+    }
+
+    .wrapper.style3 .button:hover {
+        color: #37c0fb !important;
+    }
+
+    #footer a {
+        border-bottom-color: #474747;
+        
+    }
+
+    #footer a:hover {
+        color: #37c0fb;
+        border-bottom-color: transparent;
+    }
+
+    #footer .icons a {
+        color: #999;
+    }
+    
+    #footer .icons a:hover {
+        color: #474747;
+    }
+
+    #footer .copyright {
+        color: ;
+    }
+
+    .dropdown-content {
+        background-color: #4c4c4c;
+    }
+
+    .dropdown-content a {
+        color: #999;
+    }
+
+    .dropdown-content a:hover {
+        color: white;
+    }
+
+    .dropdown-content a.selected {
+        color: #37c0fb !important;
+    }
+
+@media screen and (max-width: 840px) {
+    #titleBar {
+        background-color: #333;
+        box-shadow: 0 4px 0 0 #37c0fb;
+    }
+
+    #titleBar .title{
+        color: white;
+    }
+
+    #titleBar .toggle:before{
+        color: white;
+    }
+
+    #navPanel {
+        background-color: ;
+    }
+
+    #navPanel .link {
+        color: white;
+        filter: brightness(0.77);
+    }
+
+    #navPanel .link.depth-0 {
+        color: white;
+        filter: brightness(1);
+    }
+
+    .dropdown-content a:hover {
+        color: white !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .icon.major {
+        box-shadow: 0 0 0 7px white, 0 0 0 8px #e0e0e0;
+    }
+}
+
+
+</style>
+
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://site.don-gigot.com/images/petp.png">
+  <meta name="twitter:image" content="http://localhost:13131/images/petp.png">
   <meta name="twitter:title" content="The Sixth Thing">
   <meta name="twitter:description" content="Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.
 Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt.">
-<meta property="og:url" content="https://site.don-gigot.com/posts/sixth/">
+<meta property="og:url" content="http://localhost:13131/posts/sixth/">
   <meta property="og:site_name" content="Portes et Plumes">
   <meta property="og:title" content="The Sixth Thing">
   <meta property="og:description" content="Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.
@@ -30,7 +329,7 @@ Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt.">
     <meta property="article:modified_time" content="2020-01-06T00:00:00+01:00">
     <meta property="article:tag" content="Example">
     <meta property="article:tag" content="Duis Neque">
-    <meta property="og:image" content="https://site.don-gigot.com/images/petp.png">
+    <meta property="og:image" content="http://localhost:13131/images/petp.png">
 </head>
     <body class="is-preload">
         <div id="page-wrapper"><div id="header">
@@ -75,7 +374,7 @@ Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt.">
             </a>
         </li></ul>
 </div>
-<div id="logo-wrapper"><h1><a href="https://site.don-gigot.com/" id="logo">
+<div id="logo-wrapper"><h1><a href="http://localhost:13131/" id="logo">
         Portes et Plumes
     </a></h1></div>
 

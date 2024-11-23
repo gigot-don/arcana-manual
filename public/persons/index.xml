@@ -2,51 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personnes on Portes et Plumes</title>
-    <link>https://site.don-gigot.com/persons/</link>
+    <link>http://localhost:13131/persons/</link>
     <description>Recent content in Personnes on Portes et Plumes</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Untitled. All rights reserved</copyright>
     <image>
-        <url>https://site.don-gigot.com/images/petp.png</url>
+        <url>http://localhost:13131/images/petp.png</url>
         <title>Personnes on Portes et Plumes</title>
-        <link>https://site.don-gigot.com/persons/</link>
+        <link>http://localhost:13131/persons/</link>
     </image>
     <lastBuildDate>Sun, 02 Jul 2023 00:00:00 +0200</lastBuildDate>
-    <atom:link href="https://site.don-gigot.com/persons/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:13131/persons/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jean Godon</title>
-      <link>https://site.don-gigot.com/persons/jean-godon/</link>
+      <link>http://localhost:13131/persons/jean-godon/</link>
       <pubDate>Sun, 02 Jul 2023 00:00:00 +0200</pubDate>
-      <guid>https://site.don-gigot.com/persons/jean-godon/</guid>
+      <guid>http://localhost:13131/persons/jean-godon/</guid>
       <description>&lt;p&gt;Commodi aspernatur omnis eveniet explicabo est non. Enim animi provident sequi. Ut aperiam tenetur corrupti. Quam nihil animi iure. Voluptatem quia aliquam perferendis odio et aut consequatur. Facere dolorem itaque pariatur est ipsam facilis id est.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Alexis Berrier</title>
-      <link>https://site.don-gigot.com/persons/alexis-berrier/</link>
+      <link>http://localhost:13131/persons/alexis-berrier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://site.don-gigot.com/persons/alexis-berrier/</guid>
+      <guid>http://localhost:13131/persons/alexis-berrier/</guid>
       <description></description>
     </item>
     <item>
       <title>Emilien Dockès</title>
-      <link>https://site.don-gigot.com/persons/emilien-dockes/</link>
+      <link>http://localhost:13131/persons/emilien-dockes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://site.don-gigot.com/persons/emilien-dockes/</guid>
+      <guid>http://localhost:13131/persons/emilien-dockes/</guid>
       <description>&lt;p&gt;Asperiores aut non minima aut laudantium. Sit sint ad non possimus et itaque sequi itaque. Expedita exercitationem facere fugit esse.&#xA;Modi dolores deserunt commodi reiciendis qui. Officia laborum et velit minus ut quia sit nobis. Dolor illum dolorem voluptatem culpa dolor et quis provident. Voluptatem id aperiam sed omnis. Et neque dolores dolores harum.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Le Raton Masqué</title>
-      <link>https://site.don-gigot.com/persons/le-raton-masque/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://site.don-gigot.com/persons/le-raton-masque/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Sylvain Ledig</title>
-      <link>https://site.don-gigot.com/persons/sylvain-ledig/</link>
+      <link>http://localhost:13131/persons/sylvain-ledig/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://site.don-gigot.com/persons/sylvain-ledig/</guid>
+      <guid>http://localhost:13131/persons/sylvain-ledig/</guid>
       <description></description>
     </item>
   </channel>

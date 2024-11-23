@@ -2,493 +2,491 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://site.don-gigot.com/</loc>
+    <loc>http://localhost:13131/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/"
+                href="http://localhost:13131/de/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/"
+                href="http://localhost:13131/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://site.don-gigot.com/fr/"
+                href="http://localhost:13131/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/"
+                href="http://localhost:13131/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/posts/</loc>
+    <loc>http://localhost:13131/posts/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/posts/"
+                href="http://localhost:13131/de/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/posts/"
+                href="http://localhost:13131/es/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/posts/"
+                href="http://localhost:13131/posts/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/left-sidebar/</loc>
+    <loc>http://localhost:13131/left-sidebar/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/left-sidebar/"
+                href="http://localhost:13131/de/left-sidebar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/left-sidebar/"
+                href="http://localhost:13131/es/left-sidebar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/left-sidebar/"
+                href="http://localhost:13131/left-sidebar/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/right-sidebar/</loc>
+    <loc>http://localhost:13131/right-sidebar/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/right-sidebar/"
+                href="http://localhost:13131/de/right-sidebar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/right-sidebar/"
+                href="http://localhost:13131/es/right-sidebar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/right-sidebar/"
+                href="http://localhost:13131/right-sidebar/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/two-sidebar/</loc>
+    <loc>http://localhost:13131/two-sidebar/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/two-sidebar/"
+                href="http://localhost:13131/de/two-sidebar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/two-sidebar/"
+                href="http://localhost:13131/es/two-sidebar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/two-sidebar/"
+                href="http://localhost:13131/two-sidebar/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/no-sidebar/</loc>
+    <loc>http://localhost:13131/no-sidebar/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/no-sidebar/"
+                href="http://localhost:13131/de/no-sidebar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/no-sidebar/"
+                href="http://localhost:13131/es/no-sidebar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/no-sidebar/"
+                href="http://localhost:13131/no-sidebar/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/projects/</loc>
+    <loc>http://localhost:13131/projects/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/projects/"
+                href="http://localhost:13131/de/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/projects/"
+                href="http://localhost:13131/es/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://site.don-gigot.com/fr/projects/"
+                href="http://localhost:13131/fr/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/projects/"
+                href="http://localhost:13131/projects/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/series/</loc>
+    <loc>http://localhost:13131/series/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/series/"
+                href="http://localhost:13131/de/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/series/"
+                href="http://localhost:13131/es/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://site.don-gigot.com/fr/series/"
+                href="http://localhost:13131/fr/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/series/"
+                href="http://localhost:13131/series/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/tags/belonging-outside-belonging/</loc>
+    <loc>http://localhost:13131/tags/belonging-outside-belonging/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/games/</loc>
+    <loc>http://localhost:13131/games/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/games/"
+                href="http://localhost:13131/de/games/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/games/"
+                href="http://localhost:13131/es/games/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://site.don-gigot.com/fr/games/"
+                href="http://localhost:13131/fr/games/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/games/"
+                href="http://localhost:13131/games/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/series/les-ateliers/</loc>
+    <loc>http://localhost:13131/series/les-ateliers/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/tags/no-dice-no-master/</loc>
+    <loc>http://localhost:13131/tags/no-dice-no-master/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/posts/nouveau_test/</loc>
+    <loc>http://localhost:13131/posts/nouveau_test/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/organizations/</loc>
+    <loc>http://localhost:13131/organizations/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/organizations/"
+                href="http://localhost:13131/de/organizations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/organizations/"
+                href="http://localhost:13131/es/organizations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://site.don-gigot.com/fr/organizations/"
+                href="http://localhost:13131/fr/organizations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/organizations/"
+                href="http://localhost:13131/organizations/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/organizations/portes-et-plumes/</loc>
+    <loc>http://localhost:13131/organizations/portes-et-plumes/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/projects/recherche-theoretico-experimentale/</loc>
+    <loc>http://localhost:13131/projects/recherche-theoretico-experimentale/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/tags/sans-mj/toutes-mjs/</loc>
+    <loc>http://localhost:13131/tags/sans-mj/toutes-mjs/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/tags/</loc>
+    <loc>http://localhost:13131/tags/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/tags/"
+                href="http://localhost:13131/de/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/tags/"
+                href="http://localhost:13131/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://site.don-gigot.com/fr/tags/"
+                href="http://localhost:13131/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/tags/"
+                href="http://localhost:13131/tags/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/games/wanderhome/</loc>
+    <loc>http://localhost:13131/games/wanderhome/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/posts/post_de_test/</loc>
+    <loc>http://localhost:13131/posts/post_de_test/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/playmaterial/</loc>
+    <loc>http://localhost:13131/playmaterial/</loc>
     <lastmod>2023-07-02T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/playmaterial/"
+                href="http://localhost:13131/de/playmaterial/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/playmaterial/"
+                href="http://localhost:13131/es/playmaterial/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://site.don-gigot.com/fr/playmaterial/"
+                href="http://localhost:13131/fr/playmaterial/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/playmaterial/"
+                href="http://localhost:13131/playmaterial/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/playmaterial/fdp-wanderhome-festival/</loc>
+    <loc>http://localhost:13131/playmaterial/fdp-wanderhome-festival/</loc>
     <lastmod>2023-07-02T00:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/persons/jean-godon/</loc>
+    <loc>http://localhost:13131/persons/jean-godon/</loc>
     <lastmod>2023-07-02T00:00:00+02:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/persons/</loc>
+    <loc>http://localhost:13131/persons/</loc>
     <lastmod>2023-07-02T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/persons/"
+                href="http://localhost:13131/de/persons/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/persons/"
+                href="http://localhost:13131/es/persons/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://site.don-gigot.com/fr/persons/"
+                href="http://localhost:13131/fr/persons/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/persons/"
+                href="http://localhost:13131/persons/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/tags/puke/</loc>
+    <loc>http://localhost:13131/tags/puke/</loc>
     <lastmod>2022-02-08T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/playmaterial/fdp-tww3/</loc>
+    <loc>http://localhost:13131/playmaterial/fdp-tww3/</loc>
     <lastmod>2022-02-08T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/tags/squiggity/</loc>
+    <loc>http://localhost:13131/tags/squiggity/</loc>
     <lastmod>2022-02-08T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/tags/trad/</loc>
+    <loc>http://localhost:13131/tags/trad/</loc>
     <lastmod>2022-02-08T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/games/warhammer-fantasy-role-play/</loc>
+    <loc>http://localhost:13131/games/warhammer-fantasy-role-play/</loc>
     <lastmod>2022-02-08T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/tags/duis-neque/</loc>
+    <loc>http://localhost:13131/tags/duis-neque/</loc>
     <lastmod>2020-01-06T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/tags/duis-neque/"
+                href="http://localhost:13131/de/tags/duis-neque/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/tags/duis-neque/"
+                href="http://localhost:13131/es/tags/duis-neque/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/tags/duis-neque/"
+                href="http://localhost:13131/tags/duis-neque/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/tags/example/</loc>
+    <loc>http://localhost:13131/tags/example/</loc>
     <lastmod>2020-01-06T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://site.don-gigot.com/posts/sixth/</loc>
+    <loc>http://localhost:13131/posts/sixth/</loc>
     <lastmod>2020-01-06T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/posts/sixth/"
+                href="http://localhost:13131/de/posts/sixth/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/posts/sixth/"
+                href="http://localhost:13131/es/posts/sixth/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/posts/sixth/"
+                href="http://localhost:13131/posts/sixth/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/tags/lorem-ipsum/</loc>
+    <loc>http://localhost:13131/tags/lorem-ipsum/</loc>
     <lastmod>2020-01-05T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/tags/lorem-ipsum/"
+                href="http://localhost:13131/de/tags/lorem-ipsum/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/tags/lorem-ipsum/"
+                href="http://localhost:13131/es/tags/lorem-ipsum/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/tags/lorem-ipsum/"
+                href="http://localhost:13131/tags/lorem-ipsum/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/posts/fifth/</loc>
+    <loc>http://localhost:13131/posts/fifth/</loc>
     <lastmod>2020-01-05T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/posts/fifth/"
+                href="http://localhost:13131/de/posts/fifth/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/posts/fifth/"
+                href="http://localhost:13131/es/posts/fifth/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/posts/fifth/"
+                href="http://localhost:13131/posts/fifth/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/posts/fourth/</loc>
+    <loc>http://localhost:13131/posts/fourth/</loc>
     <lastmod>2020-01-04T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/posts/fourth/"
+                href="http://localhost:13131/de/posts/fourth/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/posts/fourth/"
+                href="http://localhost:13131/es/posts/fourth/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/posts/fourth/"
+                href="http://localhost:13131/posts/fourth/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/posts/third/</loc>
+    <loc>http://localhost:13131/posts/third/</loc>
     <lastmod>2020-01-03T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/posts/third/"
+                href="http://localhost:13131/de/posts/third/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/posts/third/"
+                href="http://localhost:13131/es/posts/third/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/posts/third/"
+                href="http://localhost:13131/posts/third/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/posts/second/</loc>
+    <loc>http://localhost:13131/posts/second/</loc>
     <lastmod>2020-01-02T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/posts/second/"
+                href="http://localhost:13131/de/posts/second/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/posts/second/"
+                href="http://localhost:13131/es/posts/second/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/posts/second/"
+                href="http://localhost:13131/posts/second/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/posts/first/</loc>
+    <loc>http://localhost:13131/posts/first/</loc>
     <lastmod>2020-01-01T00:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://site.don-gigot.com/de/posts/first/"
+                href="http://localhost:13131/de/posts/first/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://site.don-gigot.com/es/posts/first/"
+                href="http://localhost:13131/es/posts/first/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://site.don-gigot.com/posts/first/"
+                href="http://localhost:13131/posts/first/"
                 />
   </url><url>
-    <loc>https://site.don-gigot.com/persons/alexis-berrier/</loc>
+    <loc>http://localhost:13131/persons/alexis-berrier/</loc>
   </url><url>
-    <loc>https://site.don-gigot.com/projects/animation-et-prestations/</loc>
+    <loc>http://localhost:13131/projects/animation-et-prestations/</loc>
   </url><url>
-    <loc>https://site.don-gigot.com/tags/content/</loc>
+    <loc>http://localhost:13131/tags/content/</loc>
   </url><url>
-    <loc>https://site.don-gigot.com/organizations/crazy-orc/</loc>
+    <loc>http://localhost:13131/organizations/crazy-orc/</loc>
   </url><url>
-    <loc>https://site.don-gigot.com/persons/emilien-dockes/</loc>
+    <loc>http://localhost:13131/persons/emilien-dockes/</loc>
   </url><url>
-    <loc>https://site.don-gigot.com/tags/examples/</loc>
+    <loc>http://localhost:13131/tags/examples/</loc>
   </url><url>
-    <loc>https://site.don-gigot.com/persons/le-raton-masque/</loc>
+    <loc>http://localhost:13131/series/les-explorations/</loc>
   </url><url>
-    <loc>https://site.don-gigot.com/series/les-explorations/</loc>
+    <loc>http://localhost:13131/series/plurielles-le-jeu/</loc>
   </url><url>
-    <loc>https://site.don-gigot.com/series/plurielles-le-jeu/</loc>
+    <loc>http://localhost:13131/tags/sidebar/</loc>
   </url><url>
-    <loc>https://site.don-gigot.com/tags/sidebar/</loc>
+    <loc>http://localhost:13131/persons/sylvain-ledig/</loc>
   </url><url>
-    <loc>https://site.don-gigot.com/persons/sylvain-ledig/</loc>
-  </url><url>
-    <loc>https://site.don-gigot.com/organizations/trollune/</loc>
+    <loc>http://localhost:13131/organizations/trollune/</loc>
   </url>
 </urlset>
