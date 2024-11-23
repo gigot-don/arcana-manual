@@ -40,7 +40,12 @@
     <language>{{ site.Language.LanguageCode }}</language>{{ with $authorEmail }}
     <managingEditor>{{.}}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}
     <webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with .Site.Copyright }}
-    <copyright>{{ . }}</copyright>{{ end }}{{ if not .Date.IsZero }}
+    <copyright>{{ . }}</copyright>{{ end }}{{ with site.Params.images }}
+    <image>
+        <url>{{ (index . 0) | absURL }}</url>{{ end }}
+        <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+        <link>{{ .Permalink }}</link>
+    </image>{{ if not .Date.IsZero }}
     <lastBuildDate>{{ (index $pages.ByLastmod.Reverse 0).Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     {{- with .OutputFormats.Get "RSS" }}
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
@@ -51,7 +56,8 @@
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
-      <guid>{{ .Permalink }}</guid>
+      <guid>{{ .Permalink }}</guid>{{ with .Resources.Get .Params.image }}
+      <enclosure url="{{ .Permalink }}" length="{{ .Content |len }}" type="{{ .MediaType.Type }}"/>{{ end }}
       <description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
     </item>
     {{- end }}

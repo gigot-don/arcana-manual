@@ -29,7 +29,7 @@ taxonomies:
 params:
   description: A business/corporate style responsive site template.
   images:
-    - images/metaimage.jpg
+    - images/petp.png
   show_post_dates: true
   social:
     - title: Twitter
