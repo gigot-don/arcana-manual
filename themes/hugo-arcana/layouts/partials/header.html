@@ -6,7 +6,7 @@
         {{- if .Site.Data.design.globalheader.image.display }}
             <img src="{{ ( printf "/images/%s.jpg" .Site.Data.design.globalheader.image.src) | relURL }}" alt="{{ .Site.Data.design.globalheader.image_alt }}" />
         {{- end }}
-        {{ with .Site.Data.globalheader.title }}{{ . | markdownify }}{{ else }}{{ .Site.Title }}{{ end }}
+        {{ with .Site.Data.design.globalheader.title }}{{ . | markdownify }}{{ else }}{{ .Site.Title }}{{ end }}
     </a></h1></div>
 
     {{ $found := false }}
