@@ -1,12 +1,10 @@
 banner:
   enable: true
   image: /images/banner.jpg
-  contents: >-
-    **Arcana:** _A responsive site template freebie by [HTML5
-    UP](https://html5up.net/)_
+  contents: Jeux Narratifs et de Rôle, pour et par tou·tes.
   button:
-    contents: Learn More
-    url: '#'
+    contents: En savoir plus
+    url: /l-association
 items:
   - homepage_component_type: highlights
     items_per_row: 3
@@ -30,10 +28,14 @@ items:
     heading: A gigantic heading you can use for whatever
     contents: With a much smaller subtitle hanging out just below it
   - homepage_component_type: posts
-    content_type: posts
+    content_type: post
     max: 4
   - homepage_component_type: cta
     contents: Are you ready to continue your quest?
     button:
       contents: Insert Coin
       url: '#'
+  - homepage_component_type: posts
+    heading: Dernières aides de jeu mises en ligne
+    content_type: playmaterial
+    max: 4

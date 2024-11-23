@@ -17,8 +17,10 @@ fonts:
   - font_type: font-local
   - font_type: font-string
     inner_string: sooo
+  - font_type: font-google-api
+    inner_string: ''
 globalheader:
-  title: Arcana _by HTML5 UP_
+  title: Portes et Plumes
   image:
     display: false
     src: metaimage

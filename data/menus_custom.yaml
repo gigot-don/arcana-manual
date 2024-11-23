@@ -46,7 +46,7 @@ nav:
           - text: Jeux
             url: /games
           - text: Matériel de jeu
-            url: /play-material
+            url: /playmaterial
       - text: Tous nos liens
         url: /liens
         children: []
