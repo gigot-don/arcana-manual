@@ -1,0 +1,63 @@
+key: play-material
+title: Play Material
+description: Resources for playing
+extension: md
+dataformat: yaml
+itemtitle: Material
+hideIndex: false
+folder: content/playmaterial
+fields:
+- key: title
+  title: Title
+  type: string
+- key: auth-nest
+  title: Authors
+  type: nest
+  groupdata: false
+  fields:
+  - key : authors
+    title: Author
+    type: leaf-array
+    field:
+      type: select-from-query
+      multiple: true
+      query_glob: content/persons/*/*.md
+      query_string: "#parent_dir[]"
+- key: image
+  title: Logo
+  type: image-select
+  path: page-resources/
+- key: type
+  type: readonly
+  default: playmaterial
+- key: games
+  type: select-from-query
+  query_glob: content/games/*/*.md
+  query_string: "#parent_dir[]"
+- key: materialType
+  title: Type of Play Material
+  type: select
+  options:
+  - Fiche de personnage
+  - Matériel de table (visuel central, figurant mécanique...)
+  - Fiche de facilitation
+  - Livret de règles
+  - Autre
+- key: date
+  title: Date de création
+  type: date
+- key: tags
+  title: Tags
+  type: chips
+- key: description
+  title: Description (for listings, metadata...)
+  type: string
+- key: material
+  title: Material
+  type: bundle-manager
+  path: page-resources/
+  maxItems: 1
+  addButtonLocationTop: true
+- key: mainContent
+  title: Content (if any!)
+  type: markdown

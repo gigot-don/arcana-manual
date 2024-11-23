@@ -25,13 +25,13 @@ fields:
     title: Projects
     type: select-from-query
     multiple: true
-    query_glob: content/projects/**/*.md
+    query_glob: content/projects/*/*.md
     query_string: "#parent_dir[]"
   - key: series
     title: Series
     type: select-from-query
     multiple: true
-    query_glob: content/series/**/*.md
+    query_glob: content/series/*/*.md
     query_string: "#parent_dir[]"
   - key: tags
     title: Tags

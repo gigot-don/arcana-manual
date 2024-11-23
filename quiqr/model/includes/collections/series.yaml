@@ -21,7 +21,7 @@ fields:
   title: Projects
   type: select-from-query
   multiple: true
-  query_glob: content/projects/**/*.md
+  query_glob: content/projects/*/*.md
   query_string: "#parent_dir[]"
 - key: description
   title: Description (short summary for appearing in lists)

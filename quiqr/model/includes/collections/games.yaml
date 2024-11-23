@@ -10,16 +10,17 @@ fields:
 - key: title
   title: Title
   type: string 
-- key: authors
-  title: Authors
-  type: leaf-array
-  field:
-  - key: author
-    type: string
 - key: image
   title: Logo
   type: image-select
   path: page-resources/
+- key: authors
+  title: Authors
+  type: leaf-array
+  field:
+    key: author
+    title: Author
+    type: string
 - key: website
   title: Website URL
   type: string

@@ -34,7 +34,7 @@ fields:
   - key: organization
     title: Organization
     type: select-from-query
-    query_glob: content/organizations/**/*.md
+    query_glob: content/organizations/*/*.md
     query_string: "#parent_dir[]"
     arrayTitle: true
   - key: role
