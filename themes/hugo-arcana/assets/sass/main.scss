@@ -825,6 +825,10 @@
                     border: 0;
                     display: block;
                     padding: 1.5em 0.5em 1.35em 0.5em;
+
+                    &:has(+ ul)::after {
+                        content: ' 〉';
+                    }
                 }
 
                 &:first-child {
@@ -905,12 +909,23 @@
                 color: _palette(obscure, fg);
                 text-decoration: none;
                 border: 0;
+
+                &:has(+ ul)::after {
+                    content: ' 〉';
+                }
             }
 
             &.active,
             &:hover {
                 > a {
                     color: _palette(accent, fg);
+                }
+            }
+
+            &.current {
+                > a {
+                    color: _palette(accent, fg);
+                    font-weight: 600;
                 }
             }
         }
