@@ -899,6 +899,10 @@
                 color: _palette(obscure, fg);
                 text-decoration: none;
                 border: 0;
+
+                &.active {
+                    color: _palette(accent, fg)
+                }
             }
 
             &.active,
