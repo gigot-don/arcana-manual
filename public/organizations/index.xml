@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Portes et Plumes?</title>
-    <link>https://site.don-gigot.com/organizations/</link>
-    <description>Recent content on Portes et Plumes?</description>
+    <title>Organisations on Portes et Plumes?</title>
+    <link>http://localhost:13131/organizations/</link>
+    <description>Recent content in Organisations on Portes et Plumes?</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Untitled. All rights reserved</copyright>
     <image>
-        <url>https://site.don-gigot.com/images/petp.png</url>
-        <title>Portes et Plumes?</title>
-        <link>https://site.don-gigot.com/organizations/</link>
+        <url>http://localhost:13131/images/petp.png</url>
+        <title>Organisations on Portes et Plumes?</title>
+        <link>http://localhost:13131/organizations/</link>
     </image>
     <lastBuildDate>Thu, 03 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://site.don-gigot.com/organizations/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:13131/organizations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Portes et Plumes</title>
-      <link>https://site.don-gigot.com/organizations/portes-et-plumes/</link>
+      <link>http://localhost:13131/organizations/portes-et-plumes/</link>
       <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://site.don-gigot.com/organizations/portes-et-plumes/</guid>
-      <enclosure url="https://site.don-gigot.com/organizations/portes-et-plumes/page-resources/PetP_logo_titre_inverse.png" length="21351" type="image/png"/>
+      <guid>http://localhost:13131/organizations/portes-et-plumes/</guid>
+      <enclosure url="http://localhost:13131/organizations/portes-et-plumes/page-resources/PetP_logo_titre_inverse.png" length="21351" type="image/png"/>
       <description>&lt;p&gt;Quaerat ut et non. Culpa harum quibusdam numquam maiores animi. Sequi maiores accusamus quis dolores eos. Sit sint qui quos ut eius hic.&lt;/p&gt;&#xA;&lt;p&gt;Tempora aut autem nostrum. Placeat ratione deserunt nesciunt enim consequatur reprehenderit. Iste aperiam et debitis. Quis ea accusantium eos dicta qui quis delectus architecto. Sit laborum excepturi labore quam voluptas sint a blanditiis. Provident soluta iste cumque doloremque doloremque.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Crazy Orc</title>
-      <link>https://site.don-gigot.com/organizations/crazy-orc/</link>
+      <link>http://localhost:13131/organizations/crazy-orc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://site.don-gigot.com/organizations/crazy-orc/</guid>
-      <enclosure url="https://site.don-gigot.com/organizations/crazy-orc/page-resources/logo%20Crazy%20Orc.png" length="18004" type="image/png"/>
+      <guid>http://localhost:13131/organizations/crazy-orc/</guid>
+      <enclosure url="http://localhost:13131/organizations/crazy-orc/page-resources/logo%20Crazy%20Orc.png" length="18004" type="image/png"/>
       <description>&lt;p&gt;Asperiores aut non minima aut laudantium. Sit sint ad non possimus et itaque sequi itaque. Expedita exercitationem facere fugit esse.&#xA;Modi dolores deserunt commodi reiciendis qui. Officia laborum et velit minus ut quia sit nobis. Dolor illum dolorem voluptatem culpa dolor et quis provident. Voluptatem id aperiam sed omnis. Et neque dolores dolores harum.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trollune</title>
-      <link>https://site.don-gigot.com/organizations/trollune/</link>
+      <link>http://localhost:13131/organizations/trollune/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://site.don-gigot.com/organizations/trollune/</guid>
-      <enclosure url="https://site.don-gigot.com/organizations/trollune/page-resources/logo%20Trollune.png" length="7340" type="image/png"/>
+      <guid>http://localhost:13131/organizations/trollune/</guid>
+      <enclosure url="http://localhost:13131/organizations/trollune/page-resources/logo%20Trollune.png" length="7340" type="image/png"/>
       <description></description>
     </item>
   </channel>

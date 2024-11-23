@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Portes et Plumes?</title>
-    <link>https://site.don-gigot.com/de/projects/</link>
+    <link>http://localhost:13131/de/projects/</link>
     <description>Recent content in Projects on Portes et Plumes?</description>
     <generator>Hugo</generator>
     <language>de</language>
     <copyright>© Untitled. All rights reserved</copyright>
     <image>
-        <url>https://site.don-gigot.com/images/petp.png</url>
+        <url>http://localhost:13131/images/petp.png</url>
         <title>Projects on Portes et Plumes?</title>
-        <link>https://site.don-gigot.com/de/projects/</link>
+        <link>http://localhost:13131/de/projects/</link>
     </image>
-    <atom:link href="https://site.don-gigot.com/de/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:13131/de/projects/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

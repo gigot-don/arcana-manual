@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trad on Portes et Plumes?</title>
-    <link>https://site.don-gigot.com/tags/trad/</link>
+    <link>http://localhost:13131/tags/trad/</link>
     <description>Recent content in Trad on Portes et Plumes?</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Untitled. All rights reserved</copyright>
     <image>
-        <url>https://site.don-gigot.com/images/petp.png</url>
+        <url>http://localhost:13131/images/petp.png</url>
         <title>Trad on Portes et Plumes?</title>
-        <link>https://site.don-gigot.com/tags/trad/</link>
+        <link>http://localhost:13131/tags/trad/</link>
     </image>
     <lastBuildDate>Tue, 08 Feb 2022 00:00:00 +0100</lastBuildDate>
-    <atom:link href="https://site.don-gigot.com/tags/trad/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:13131/tags/trad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Warhammer Fantasy Role Play</title>
-      <link>https://site.don-gigot.com/games/warhammer-fantasy-role-play/</link>
+      <link>http://localhost:13131/games/warhammer-fantasy-role-play/</link>
       <pubDate>Tue, 08 Feb 2022 00:00:00 +0100</pubDate>
-      <guid>https://site.don-gigot.com/games/warhammer-fantasy-role-play/</guid>
-      <enclosure url="https://site.don-gigot.com/games/warhammer-fantasy-role-play/page-resources/wfrp-logo.png" length="468662" type="image/png"/>
+      <guid>http://localhost:13131/games/warhammer-fantasy-role-play/</guid>
+      <enclosure url="http://localhost:13131/games/warhammer-fantasy-role-play/page-resources/wfrp-logo.png" length="468662" type="image/png"/>
       <description></description>
     </item>
   </channel>

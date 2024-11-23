@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Crazy Orc on Portes et Plumes?</title>
-    <link>https://site.don-gigot.com/organizations/crazy-orc/</link>
+    <link>http://localhost:13131/organizations/crazy-orc/</link>
     <description>Recent content in Crazy Orc on Portes et Plumes?</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© Untitled. All rights reserved</copyright>
     <image>
-        <url>https://site.don-gigot.com/images/petp.png</url>
+        <url>http://localhost:13131/images/petp.png</url>
         <title>Crazy Orc on Portes et Plumes?</title>
-        <link>https://site.don-gigot.com/organizations/crazy-orc/</link>
+        <link>http://localhost:13131/organizations/crazy-orc/</link>
     </image>
-    <atom:link href="https://site.don-gigot.com/organizations/crazy-orc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:13131/organizations/crazy-orc/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
