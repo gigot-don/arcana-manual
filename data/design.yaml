@@ -5,7 +5,7 @@ colors:
   fgBold: '#4c4c4c'
   fgLight: '#999'
   borderColor: '#e0e0e0'
-  bgAccent: '#00ff00'
+  bgAccent: purple
   fgAccent: white
   bgObscure: '#333'
   bgObscureLight: '#555'
