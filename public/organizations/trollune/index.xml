@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trollune on Portes et Plumes?</title>
+    <link>https://site.don-gigot.com/organizations/trollune/</link>
+    <description>Recent content in Trollune on Portes et Plumes?</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© Untitled. All rights reserved</copyright>
+    <image>
+        <url>https://site.don-gigot.com/images/petp.png</url>
+        <title>Trollune on Portes et Plumes?</title>
+        <link>https://site.don-gigot.com/organizations/trollune/</link>
+    </image>
+    <atom:link href="https://site.don-gigot.com/organizations/trollune/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

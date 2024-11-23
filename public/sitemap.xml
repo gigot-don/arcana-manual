@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>https://site.don-gigot.com/en/sitemap.xml</loc>
+    
+      <lastmod>2024-10-03T00:00:00+00:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://site.don-gigot.com/de/sitemap.xml</loc>
+    
+      <lastmod>2020-01-06T00:00:00+01:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://site.don-gigot.com/es/sitemap.xml</loc>
+    
+      <lastmod>2020-01-06T00:00:00+01:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://site.don-gigot.com/fr/sitemap.xml</loc>
+    
+  </sitemap>
+  
+</sitemapindex>

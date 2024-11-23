@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portes et Plumes?</title>
+    <link>https://site.don-gigot.com/games/</link>
+    <description>Recent content on Portes et Plumes?</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© Untitled. All rights reserved</copyright>
+    <image>
+        <url>https://site.don-gigot.com/images/petp.png</url>
+        <title>Portes et Plumes?</title>
+        <link>https://site.don-gigot.com/games/</link>
+    </image>
+    <lastBuildDate>Thu, 03 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://site.don-gigot.com/games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wanderhome</title>
+      <link>https://site.don-gigot.com/games/wanderhome/</link>
+      <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://site.don-gigot.com/games/wanderhome/</guid>
+      <enclosure url="https://site.don-gigot.com/games/wanderhome/page-resources/wanderhome_logo.png" length="568886" type="image/png"/>
+      <description>&lt;p&gt;S&amp;rsquo;il y a besoin de rajouter plus de choses sur Wanderhome&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Warhammer Fantasy Role Play</title>
+      <link>https://site.don-gigot.com/games/warhammer-fantasy-role-play/</link>
+      <pubDate>Tue, 08 Feb 2022 00:00:00 +0100</pubDate>
+      <guid>https://site.don-gigot.com/games/warhammer-fantasy-role-play/</guid>
+      <enclosure url="https://site.don-gigot.com/games/warhammer-fantasy-role-play/page-resources/wfrp-logo.png" length="468662" type="image/png"/>
+      <description></description>
+    </item>
+  </channel>
+</rss>
