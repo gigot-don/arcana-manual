@@ -8,7 +8,7 @@ affiliations:
     current: true
     duration: 2018-
 socials: []
-description: Le prédid'orc
+description: Le Présid'orc
 
 ---
 
