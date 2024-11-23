@@ -1,3 +1,4 @@
 resources/_gen
+export/*
 public
 .quiqr-cache
