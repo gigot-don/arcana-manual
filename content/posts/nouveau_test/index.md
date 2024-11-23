@@ -3,7 +3,8 @@ title: nouveau test
 type: post
 author: Jean Godon
 draft: false
-description: ''
+games: wanderhome
+description: 'Mise à l essai de la fonctionnalité de galerie'
 organizations: Portes et Plumes
 resources:
   - src: page-resources/20200120_104731.jpg
@@ -40,11 +41,6 @@ projects: recherche-theoretico-experimentale
 
 ---
 
-## Blabla
-## Snous
-### Tchoupidou
-### Boubidouwa
-## Mais on revient
-Et on lorem ipsum
-### Et on repart
-## Voilà
+## 1 2 1 2
+### Essai de sonorisation...
+## Systèmes nominaux.
