@@ -14,7 +14,8 @@
         {{ $personPage := . }}
         {{ range .Params.affiliations }}
           {{ if and (eq .current true) ($organizationPage.Eq (site.GetPage (printf "organizations/%s" .organization))) }}
-            <li><a href="{{ $personPage.Permalink }}">{{ $personPage.Title }}</a></li>
+            <li><a href="{{ $personPage.Permalink }}">{{ $personPage.Title }}</a> - {{ .role }}</li>
+            {{ break }}
           {{ end }}
         {{ end }}
       {{ end }}
