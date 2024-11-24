@@ -990,10 +990,10 @@
     .center-column {
         margin: 0 auto;
         max-width: 100%;
-        width: 1600px;
         background-color: _palette(bg);
 
         @media screen and (min-width: 1801px){
+            width: 1600px;
             box-shadow: 0 0 10px 10px rgba(192,192,192,0.5); /* note 0 offset values */
             clip-path: inset(0px -20px 0px -20px);
         }
