@@ -11,8 +11,13 @@ affiliations:
     role: Président Directeur Général
     current: true
     duration: 2024-
+  - organization: portes-et-plumes
+    role: Employé du mois perpétuel
+    current: true
+    duration: 2021-
 socials: []
 description: Le Présijean
+localization: ''
 
 ---
 

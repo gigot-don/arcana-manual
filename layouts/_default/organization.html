@@ -12,10 +12,12 @@
     <ul>
       {{ range . }}
         {{ $personPage := . }}
-        {{ range .Params.affiliations }}
-          {{ if and (eq .current true) ($organizationPage.Eq (site.GetPage (printf "organizations/%s" .organization))) }}
-            <li><a href="{{ $personPage.Permalink }}">{{ $personPage.Title }}</a> - {{ .role }}</li>
-            {{ break }}
+        {{ with .Params.affiliations }}
+          {{ with (where (where . "current" true) "organization" $organizationPage.File.ContentBaseName)  }}
+            <li>
+              <a href="{{ $personPage.Permalink }}">{{ $personPage.Title }}</a>
+              {{ range $k, $v := (where . ".role" "ne" "") }}{{with $k}} ; {{end}}{{ $v.role }}{{end}}
+            </li>
           {{ end }}
         {{ end }}
       {{ end }}
