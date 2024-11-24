@@ -14,7 +14,13 @@
     {{- partial "head/style-overrides" . -}}
 {{ end }}
 
-{{- partial "analytics/google-tag-manager/head.html" . -}}
+{{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+{{ end }}
+
+{{ if and (not site.Params.privacy.googleAnalytics.disable) site.Params.services.googleAnalytics.id }}
+    {{- partial "analytics/google-tag-manager/head.html" . }}
+{{ end }}
 {{- partial "head/custom.html" . -}}
 {{- template "_internal/twitter_cards.html" . -}}
 {{- template "_internal/opengraph.html" . -}}

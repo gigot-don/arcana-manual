@@ -5,7 +5,9 @@
         {{- template "_internal/opengraph.html" . -}}
     </head>
     <body class="is-preload">
-        {{- partial "analytics/google-tag-manager/body.html" . }}
+        {{ if and (not site.Params.privacy.googleAnalytics.disable) site.Params.services.googleAnalytics.id }}
+            {{- partial "analytics/google-tag-manager/body.html" . }}
+        {{ end }}
         <div id="page-wrapper">
             {{- partial "header.html" . }}
 
