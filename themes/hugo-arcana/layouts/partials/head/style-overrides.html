@@ -200,22 +200,23 @@
         border-bottom-color: transparent;
     }
 
-    .wrapper.style1,
-    .wrapper.style2 {
+    .wrapper .style1,
+    .wrapper .style2 {
+        padding: 5em 0 3em 0;
         background-color: {{ $.Site.Data.design.colors.bg }};
     }
 
-    .wrapper.style3 {
+    .wrapper .style3 {
         background-color: {{ $.Site.Data.design.colors.bgAccent }};
         color: {{ $.Site.Data.design.colors.fgAccent }};
     }
 
-    .wrapper.style3 .button {
+    .wrapper .style3 .button {
         background-color: {{ $.Site.Data.design.colors.fgAccent }};
         color: {{ $.Site.Data.design.colors.fg }};
     }
 
-    .wrapper.style3 .button:hover {
+    .wrapper .style3 .button:hover {
         color: {{ $.Site.Data.design.colors.bgAccent }} !important;
     }
 

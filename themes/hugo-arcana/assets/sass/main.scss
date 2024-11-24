@@ -987,14 +987,27 @@
 
 /* Wrapper */
 
-    .wrapper {
-        padding: 5em 0 3em 0;
+    .center-column {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 1600px;
+        background-color: _palette(bg);
 
-        &.style1 {
+        @media screen and (min-width: 1801px){
+            box-shadow: 0 0 10px 10px rgba(192,192,192,0.5); /* note 0 offset values */
+            clip-path: inset(0px -20px 0px -20px);
+        }
+    }
+
+    .wrapper {
+
+        .style1 {
+            padding: 5em 0 3em 0;
             background: _palette(bg);
         }
 
-        &.style2 {
+        .style2 {
+            padding: 5em 0 3em 0;
             background-color:       _palette(bg);
             background-image:       url('images/bg02.png'),         url('images/bg03.png'),         url('images/bg01.png');
             background-position:    top left,                       bottom left,                    top left;
@@ -1002,7 +1015,8 @@
             background-repeat:      no-repeat,                      no-repeat,                      repeat;
         }
 
-        &.style3 {
+        .style3 {
+            padding: 5em 0 3em 0;
             background-color: _palette(accent, bg);
             @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("images/bg01.png")'));
             color: _palette(accent, fg);

@@ -18,9 +18,13 @@
                     {{- partial "homepage/banner.html" .banner -}}
                 {{- end }}
 
-                {{- range .items }}
-                    {{- partial (printf "homepage/blocks/%s.html" .homepage_component_type) (dict "ctx" $ "item" .) }}
-                {{- end }}
+                <div class="wrapper">
+                    <div class="center-column">
+                        {{- range .items }}
+                            {{- partial (printf "homepage/blocks/%s.html" .homepage_component_type) (dict "ctx" $ "item" .) }}
+                        {{- end }}
+                    </div>
+                </div>
             {{ end }}
 
             {{- partial "footer/footer.html" . -}}
