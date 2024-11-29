@@ -828,6 +828,11 @@
 
                     &:has(+ ul)::after {
                         content: ' 〉';
+                        transform: rotateZ(90deg);
+                        display: block;
+                        position: absolute;
+                        bottom: 0.05em;
+                        left: 50%;
                     }
                 }
 
@@ -987,27 +992,22 @@
 
 /* Wrapper */
 
-    .center-column {
+    .wrapper {
+        padding: 5em 0 3em 0;
         margin: 0 auto;
         max-width: 100%;
-        background-color: _palette(bg);
 
         @media screen and (min-width: 1801px){
             width: 1600px;
             box-shadow: 0 0 10px 10px rgba(192,192,192,0.5); /* note 0 offset values */
             clip-path: inset(0px -20px 0px -20px);
         }
-    }
 
-    .wrapper {
-
-        .style1 {
-            padding: 5em 0 3em 0;
+        &.style1 {
             background: _palette(bg);
         }
 
-        .style2 {
-            padding: 5em 0 3em 0;
+        &.style2 {
             background-color:       _palette(bg);
             background-image:       url('images/bg02.png'),         url('images/bg03.png'),         url('images/bg01.png');
             background-position:    top left,                       bottom left,                    top left;
@@ -1015,8 +1015,7 @@
             background-repeat:      no-repeat,                      no-repeat,                      repeat;
         }
 
-        .style3 {
-            padding: 5em 0 3em 0;
+        &.style3 {
             background-color: _palette(accent, bg);
             @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15))', 'url("images/bg01.png")'));
             color: _palette(accent, fg);
