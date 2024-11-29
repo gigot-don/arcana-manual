@@ -1,4 +1,4 @@
-<section class="style1">
+<section class="wrapper style1">
     <div class="container">
         {{ with .item.heading }}<h2>{{ . }}</h2>{{ end }}
         {{- $pages := (where site.Pages ".Params.type" .item.content_type) }}
