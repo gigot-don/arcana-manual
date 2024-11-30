@@ -817,7 +817,10 @@
             > li {
                 position: relative;
                 display: inline-block;
-                margin-left: 1em;
+                margin-left: .5em;
+                margin-right: .5em;
+                padding-left: .25em;
+                padding-right: .25em;
 
                 a {
                     color: _palette(obscure, fg);
