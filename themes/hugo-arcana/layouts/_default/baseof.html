@@ -5,7 +5,7 @@
     </head>
     <body class="is-preload">
         {{ if and (not site.Params.privacy.googleAnalytics.disable) site.Params.services.googleAnalytics.id }}
-            {{- partial "analytics/google-tag-manager/body.html" . }}
+            {{- partialCached "analytics/google-tag-manager/body.html" . }}
         {{ end }}
         <div id="page-wrapper">
             {{- partial "header.html" . }}
@@ -83,8 +83,8 @@
                 </div>
             </section>
 
-            {{- partial "footer/footer.html" . -}}
+            {{- partialCached "footer/footer.html" . -}}
         </div>
-        {{- partial "scripts.html" . -}}
+        {{- partialCached "scripts.html" . -}}
     </body>
 </html>
