@@ -13,7 +13,7 @@ description: Le premier post du site
 projects: []
 series: []
 keywords: []
-image: page-resources/ainsley.png
+image: "page-resources/ainsley.png"
 
 ---
 

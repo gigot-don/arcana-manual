@@ -23,8 +23,34 @@
         {{ partial "tags.html" . }}
     </header>
 
+    {{- $imageBreakpointsConfig := slice 
+                (dict 
+                    "size" (slice 440 110)
+                    "width" 480
+                )
+                (dict 
+                    "size" (slice 662 165)
+                    "width" 736
+                )  
+                (dict 
+                    "size" (slice 960 240)
+                    "width" 1280
+                )  
+                (dict 
+                    "size" (slice 1200 300)
+                    "width" 1680
+                )
+                (dict 
+                    "size" (slice 1400 350)
+                    "width" 1681
+                    "isMin" true
+                )
+    }}
+
     {{- with .Params.image }}
-        <span class="image featured"><img src="{{ with page.Resources.Get . }}{{ .RelPermalink }}{{ end }}" alt="{{ page.Params.image_alt }}" /></span>
+        <span class="image featured">
+            {{ partial "process_image" (dict "page" . "breakpoints" $imageBreakpointsConfig "resource" (page.Resources.Get .)) | safeHTML }}
+        </span>
     {{ end }}
 
     {{ with .Params.games }}

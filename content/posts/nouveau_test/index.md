@@ -1,10 +1,10 @@
 ---
-title: nouveau test
+title: nouveau testo
 type: post
 author: Jean Godon
 draft: false
 games: wanderhome
-description: 'Mise à l essai de la fonctionnalité de galerie'
+description: Mise à l essai de la fonctionnalité de galerie
 organizations: Portes et Plumes
 resources:
   - src: page-resources/20200120_104731.jpg
@@ -33,11 +33,12 @@ imageGallery:
     enabled: true
     processingHint: []
 publishdate: '2024-10-03T00:00:00.000Z'
-projects: Recherche-theoretico-experimentale
-series: les-ateliers
+series:
+  - les-ateliers
 keywords: []
 image: page-resources/20200120_104731.jpg
-projects: recherche-theoretico-experimentale
+projects:
+  - recherche-theoretico-experimentale
 
 ---
 
