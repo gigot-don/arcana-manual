@@ -413,9 +413,10 @@
             display: block;
             margin: 0 0 2em 0;
 
-            img {
+            img, picture {
                 display: block;
-                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
             }
         }
     }

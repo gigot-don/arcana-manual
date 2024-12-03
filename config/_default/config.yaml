@@ -87,14 +87,20 @@ params:
       action: ''
   show_table_of_contents: false
   keywords: []
-  show_lastmod: false
+  show_lastmod: true
+  show_author: true
+  imgProcConfig:
+    pixelDensities:
+      - 2
+      - 3
+    convertToWebp: true
+    quality: 75
 markup:
   tableOfContents:
     ordered: false
+    startLevel: 3
+    endLevel: 5
 timeZone: Europe/Paris
-imgProcConfig:
-  pixelDensities: []
-  convertToWebp: true
 related:
   includeNewer: false
   toLower: false

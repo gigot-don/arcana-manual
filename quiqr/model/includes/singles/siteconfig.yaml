@@ -226,32 +226,6 @@ fields:
         title: Privacy Enhanced
         type: boolean
         default: true
-- key: imgProcConfig
-  title: Image Processing Configuration
-  type: nest
-  groupdata: true
-  fields:
-  - key: pixelDensities
-    title: Target Additional Pixel Densities
-    type: select
-    multiple: true
-    options:
-    - "2x"
-    - "3x"
-    tip: Offer alternate higher resolution images as option for Retina/HD Displays, slightly increases site build time and storage size
-  - key: convertToWebp
-    title: Serve WebP if possible
-    type: boolean
-    default: true
-    tip: Offers better performance (page load speed and such) - Original image format is served as fallback for compatibility reasons
-  - key: quality
-    title: Compression Quality Level
-    type: slider
-    step: 1
-    min: 0
-    max: 100
-    default: 75
-    tip: "Used for internal compression config, higher values result in larger file sizes with 100 being uncompressed (default: 75)"
 - key: related
   title: "\"Related Content\" Configuration"
   type: nest
@@ -340,6 +314,34 @@ fields:
 - key: params
   type: pull
   fields:
+  - key: imgProcConfig
+    title: Image Processing Configuration
+    type: nest
+    groupdata: true
+    fields:
+    - key: pixelDensities
+      title: Target Additional Pixel Densities
+      type: select
+      multiple: true
+      options:
+      - text: "2x"
+        value: 2
+      - text: "3x"
+        value: 3
+      tip: Offer alternate higher resolution images as option for Retina/HD Displays, slightly increases site build time and storage size
+    - key: convertToWebp
+      title: Serve WebP if possible
+      type: boolean
+      default: true
+      tip: Offers better performance (page load speed and such) - Original image format is served as fallback for compatibility reasons
+    - key: quality
+      title: Compression Quality Level
+      type: slider
+      step: 1
+      min: 0
+      max: 100
+      default: 75
+      tip: "Used for internal compression config, higher values result in larger file sizes with 100 being uncompressed (default: 75)"
   - key: description
     title: Meta Description (for indexing / SEO)
     type: string
@@ -354,12 +356,19 @@ fields:
     - key: show_post_dates
       title: Post Dates
       type: boolean
+      default: true
     - key: show_lastmod
       title: Last Modification Time
       type: boolean
+      default: false
+    - key: show_author
+      title: Author
+      type: boolean
+      default: false
     - key: show_table_of_contents
       title: Table of Contents
       type: boolean
+      default: false
   - key: empty-qsdazvw
     type: empty-line
   - key: social

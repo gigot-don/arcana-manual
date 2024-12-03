@@ -31,11 +31,7 @@
                 {{ end }}
             {{ end }}
 
-
-            {{- $sidebar_count := (add (cond (isset .Params "sidebar_left") 1 0) (cond (isset .Params "sidebar_right") 1 0)) }}
-
             <section class="wrapper">
-                <div class="center-column">
                 <div class="container style1">
                     {{ if gt $numSidebars 0 }}<div class="row gtr-200">{{ end }}
 
@@ -79,7 +75,6 @@
                         {{ end }}
 
                     {{ if gt $numSidebars 0 }}</div>{{ end }}
-                </div>
                 </div>
             </section>
 
