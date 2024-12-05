@@ -27,7 +27,7 @@
 
     <ul class="icons">
     {{- range .Site.Params.social }}
-        <li><a href="{{ .url }}" class="{{ if .icon }}icon brands {{ .icon  }}{{ end }}">
+        <li><a href="{{ .url }}" class="{{ if .icon }}icon brands {{ .icon  }}{{ end }}" {{- with .alt | default .title }}alt="{{.}}"{{- end }}>
             <span class="label">{{ .title }}</span>
         </a>
     {{- end }}

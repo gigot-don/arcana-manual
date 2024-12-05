@@ -314,6 +314,11 @@ fields:
 - key: params
   type: pull
   fields:
+  - key: image
+    title: Logo
+    type: image-select
+    path: /images
+    real_fs_path: /static/images
   - key: imgProcConfig
     title: Image Processing Configuration
     type: nest

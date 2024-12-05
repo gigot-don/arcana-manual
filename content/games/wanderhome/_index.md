@@ -1,8 +1,6 @@
 ---
 title: Wanderhome
 image: page-resources/wanderhome_logo.png
-images:
-  - page-resources/wanderhome_logo.png
 authors:
   - Jay Dragon
   - Ruby Lavin

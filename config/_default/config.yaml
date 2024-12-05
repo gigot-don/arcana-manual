@@ -28,8 +28,7 @@ taxonomies:
   playmaterial: playmaterial
 params:
   description: A business/corporate style responsive site template.
-  images:
-    - images/petp.png
+  image: images/petp.png
   show_post_dates: true
   social:
     - title: Twitter

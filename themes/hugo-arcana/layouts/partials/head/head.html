@@ -1,6 +1,6 @@
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
 {{ $options := (dict "targetPath" "/style.css" "outputStyle" "compressed" "enableSourceMap" .Site.Params.enableSourceMaps) }}
@@ -23,4 +23,4 @@
 {{ end }}
 {{- partial "head/custom.html" . -}}
 {{- template "_internal/twitter_cards.html" . -}}
-{{- template "_internal/opengraph.html" . -}}
+{{- partial "opengraph.html" . -}}
