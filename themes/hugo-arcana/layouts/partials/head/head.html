@@ -18,6 +18,13 @@
   {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
 {{ end }}
 
+{{- with .Description | default site.Params.description }}
+  <meta name="description" content="{{.}}" />
+{{- end}}
+{{- with .Params.keywords | default site.Params.keywords }}
+  <meta name="keywords" content="{{ delimit . `,` }}" />
+{{- end }}
+
 {{ if and (not site.Params.privacy.googleAnalytics.disable) site.Params.services.googleAnalytics.id }}
     {{- partial "analytics/google-tag-manager/head.html" . }}
 {{ end }}
