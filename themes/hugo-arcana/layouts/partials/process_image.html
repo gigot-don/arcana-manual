@@ -1,25 +1,28 @@
 <picture>
-    {{- range .breakpoints }}
-        {{- $sizeTuple := .size }}
-        {{- $qualityDescriptor := (printf "q%v" (site.Params.imgProcConfig.quality | default 75)) }}
-        {{- $srcSetSlice := slice }}
-        {{- $webpSrcSetSlice := slice }}
-        {{- range slice 1 | append site.Params.imgProcConfig.pixelDensities }}
-            {{- $adjustedDimensionsDescriptor := (printf "%vx%v" (mul . (index $sizeTuple 0)) (mul . (index $sizeTuple 1)))}}
-            {{- $pixDensityDescriptor := (print . "x") }}
-            {{- with $.resource.Fit $adjustedDimensionsDescriptor }}
-                {{- $srcSetSlice = $srcSetSlice | append (printf "%v %v" .RelPermalink $pixDensityDescriptor) }}
-            {{- end }}
-            {{- if site.Params.imgProcConfig.convertToWebP | default true }}
-                {{- with $.resource.Fit (printf "%v webp %v" $adjustedDimensionsDescriptor $qualityDescriptor) }}
-                    {{- $webpSrcSetSlice = $webpSrcSetSlice | append (printf "%v %v" .RelPermalink $pixDensityDescriptor) }}
-                {{- end }}
-            {{- end }}
-        {{- end }}
-        {{- if site.Params.imgProcConfig.convertToWebP | default true }}
-        <source type="image/webp" media="({{- with .isMin}}min{{- else}}max{{- end}}-width: {{.width}}px)" srcset="{{ delimit $webpSrcSetSlice ", " }}">
-        {{- end }}
-        <source media="({{- with .isMin}}min{{- else}}max{{- end}}-width: {{.width}}px)" srcset="{{ delimit $srcSetSlice ", " }}">
-    {{- end }}
-    <img src="{{$.resource.RelPermalink}}" alt="">
+    {{- range .breakpoints -}}
+        {{- $sizeTuple := .size -}}
+        {{- $qualityDescriptor := (printf "q%v" (site.Params.imgProcConfig.quality | default 75)) -}}
+        {{- $srcSetSlice := slice -}}
+        {{- $webpSrcSetSlice := slice -}}
+        {{- $srcDisplaySize := slice -}}
+        {{- range $sizeMult := slice 1 | append site.Params.imgProcConfig.pixelDensities }}
+            {{- $adjustedDimensionsDescriptor := (printf "%vx%v" (mul $sizeMult (index $sizeTuple 0)) (mul $sizeMult (index $sizeTuple 1)))}}
+            {{- $pixDensityDescriptor := (print $sizeMult "x") -}}
+            {{- with $.resource.Fit $adjustedDimensionsDescriptor -}}
+                {{- if eq $sizeMult 1 -}}{{- $srcDisplaySize = $srcDisplaySize | append .Width .Height -}}{{- end -}}
+                {{- $srcSetSlice = $srcSetSlice | append (printf "%v %v" .RelPermalink $pixDensityDescriptor) -}}
+            {{- end -}}
+            {{- if site.Params.imgProcConfig.convertToWebP | default true -}}
+                {{- with $.resource.Fit (printf "%v webp %v" $adjustedDimensionsDescriptor $qualityDescriptor) -}}
+                    {{- if eq $sizeMult 1 -}}{{- $srcDisplaySize = $srcDisplaySize | append .Width .Height -}}{{- end -}}
+                    {{- $webpSrcSetSlice = $webpSrcSetSlice | append (printf "%v %v" .RelPermalink $pixDensityDescriptor) -}}
+                {{- end -}}
+            {{- end -}}
+        {{- end -}}
+        {{- if site.Params.imgProcConfig.convertToWebP | default true -}}
+        <source type="image/webp" media="({{- with .isMin}}min{{- else}}max{{- end}}-width: {{.width}}px)" srcset="{{ delimit $webpSrcSetSlice ", " }}" width="{{ index $srcDisplaySize 0 }}" height="{{ index $srcDisplaySize 1 }}">
+        {{- end -}}
+        <source media="({{- with .isMin}}min{{- else}}max{{- end}}-width: {{.width}}px)" srcset="{{ delimit $srcSetSlice ", " }}" width="{{ index $srcDisplaySize 0 }}" height="{{ index $srcDisplaySize 1 }}">
+    {{- end -}}
+    <img src="{{$.resource.RelPermalink}}" alt="" width="{{$.resource.Width}}" height="{{$.resource.Height}}">
 </picture>
