@@ -1,0 +1,22 @@
+{{ $sidebarConfigFound := dict }}
+{{ $numSidebars := 0 }}
+{{ with where site.Data.sidebar_map.map "sidebar_selector" "type" }}
+    {{ with where . "selector_value" $.type }}
+        {{ $sidebarConfigFound = (index . 0) }}
+        {{ with $sidebarConfigFound.left_sidebar }} {{ $numSidebars = add $numSidebars 1 }} {{ end }}
+        {{ with $sidebarConfigFound.right_sidebar }} {{ $numSidebars = add $numSidebars 1 }} {{ end }}
+    {{ end }}
+{{ end }}
+{{ if not $sidebarConfigFound }}
+{{ with where site.Data.sidebar_map.map "sidebar_selector" "kind" }}
+    {{ with where . "selector_value" $.kind }}
+        {{ $sidebarConfigFound = (index . 0) }}
+        {{ with $sidebarConfigFound.left_sidebar }} {{ $numSidebars = add $numSidebars 1 }} {{ end }}
+        {{ with $sidebarConfigFound.right_sidebar }} {{ $numSidebars = add $numSidebars 1 }} {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ if $sidebarConfigFound }}
+    {{ $sidebarConfigFound = merge $sidebarConfigFound (dict "numSidebars" $numSidebars) }}
+{{ end }}
+{{ return $sidebarConfigFound }}

@@ -11,25 +11,12 @@
             {{- partial "header.html" . }}
 
             {{ $sidebarConfigFound := dict }}
-            {{ $numSidebars := 0 }}
             {{ $page := . }}
 
-            {{ with where $.Site.Data.sidebar_map.map "sidebar_selector" "type" }}
-                {{ with where . "selector_value" $.Type }}
-                    {{ $sidebarConfigFound = (index . 0) }}
-                    {{ with $sidebarConfigFound.left_sidebar }} {{ $numSidebars = add $numSidebars 1 }} {{ end }}
-                    {{ with $sidebarConfigFound.right_sidebar }} {{ $numSidebars = add $numSidebars 1 }} {{ end }}
-                {{ end }}
-            {{ end }}
-            {{ if not $sidebarConfigFound }}
-                {{ with where .Site.Data.sidebar_map.map "sidebar_selector" "kind" }}
-                    {{ with where . "selector_value" $.Kind }}
-                        {{ $sidebarConfigFound = (index . 0) }}
-                        {{ with $sidebarConfigFound.left_sidebar }} {{ $numSidebars = add $numSidebars 1 }} {{ end }}
-                        {{ with $sidebarConfigFound.right_sidebar }} {{ $numSidebars = add $numSidebars 1 }} {{ end }}
-                    {{ end }}
-                {{ end }}
-            {{ end }}
+            {{- $sidebarConfigFound := partialCached "find_sidebar_config" (dict "type" .Type "kind" .Kind) .Type .Kind -}}
+            {{- $numSidebars := $sidebarConfigFound.numSidebars -}}
+
+            {{ .Scratch.Set "nBars" $numSidebars }}
 
             <section class="wrapper">
                 <div class="container style1">

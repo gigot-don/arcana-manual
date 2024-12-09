@@ -7,3 +7,7 @@ map:
     left_sidebar: ''
     right_sidebar: ''
     selector_value: section
+  - sidebar_selector: type
+    left_sidebar: sidebar1
+    right_sidebar: ''
+    selector_value: playmaterial
